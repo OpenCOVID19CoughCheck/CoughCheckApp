@@ -28,16 +28,16 @@ The OpenCOVID19-AIDetectApp and its original content, features, and functionalit
 
 # About the App
 
-You maintain ownership of your data.
-You can request access and deletion of your data.
-You are responsible for what you upload.
-This App does not sell your personal data.
-This App will NOT track you on other websites.
-This App will NOT use tracking pixels, web beacons, browser fingerprinting, and/or device fingerprinting.
-This App assumes no responsibility and liability for the contents of links to other websites.
-This App will NOT collect extra data about you through promotions.
-This App will NOT uses third-party targeted advertising
-This App is only available to users of a certain age.
+  - You maintain ownership of your data.
+  - You can request access and deletion of your data.
+  - You are responsible for what you upload.
+  - This App does not sell your personal data.
+  - This App will NOT track you on other websites.
+  - This App will NOT use tracking pixels, web beacons, browser fingerprinting, and/or device fingerprinting.
+  - This App assumes no responsibility and liability for the contents of links to other websites.
+  - This App will NOT collect extra data about you through promotions.
+  - This App will NOT uses third-party targeted advertising
+  - This App is only available to users of a certain age.
 
 # About the Terms of Condition
 
