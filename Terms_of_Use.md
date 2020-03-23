@@ -2,45 +2,44 @@ _Work in Progress_
 
 # Terms of Use
 
-OpenCOVID19-AIDetectApp is a personal projects of Hernán Morales Durand, whose work is supported with help from the OpenCOVID19 Community at Just One Giant Lab (JOGL).
+OpenCOVID19-AIDetectApp (from now on The Application) is a personal project of Hernán Morales Durand, whose work is supported with help from the OpenCOVID19 Community at (Just One Giant Lab (JOGL) initiative)[https://app.jogl.io/project/132].
 
-By using this, you agree to the following terms.
+By using this, you agree to the following terms:
 
 # Administration
 
-OpenCOVID19-AIDetectApp is currently administered by Hernán Morales Durand as a personal project. Administrators have access to OpenCOVID19-AIDetectApp operations and private data. If Hernán Morales Durand chooses to add additional administrators to OpenCOVID19-AIDetectApp's operations, the site will be updated to describe these.
+The Application is currently administered by Hernán Morales Durand as an Open Source (MIT Licensed) community project. Administrators have access to The Application operations and private data. The Application does NOT store your personal information nor does make any explicit request to store login information to any database. If Hernán Morales Durand chooses to add additional administrators to The Application operations, the code repository (currently https://github.com/hernanmd/OpenCOVID19-AIDetectApp/) will be updated to describe these.
 
 # Data use and privacy
 
-Using the Open Humans API, OpenCOVID19-AIDetectApp will have access to read your relevant App data and Open Humans username.
+Using the Open Humans API, The Application will have access to read your relevant App data (in the context of the COVID-19 pandemics) and Open Humans username.
 
-We will access and store the following data from the AI Cough Detection App: your cough audio data, age, biological sex, weight, height, condition ("no condition", “common flu (suspected)“, “common flu (confirmed via test)” , “COVID-19 (suspected)“, “COVID-19 (confirmed via test)"), number of days since condition, additional symptoms (diarrhea, asthma, other respiratory diseases (e.g. cystic fibrosis), allergies, medication, lifestyle, cardiovascular disease, blood pressure, fever, temperature, heart rate, headache, muscle ache, chills, sore throat, congestion, tightness in chest, difficulty breathing, diabetes, cancer, previous organ transplant, HIV or an impaired immune system, other long-term condition). Not all of them are required.
+We will access and store the following data from the AI Cough Detection App: your cough audio data, age, biological sex, weight, height, condition (“common flu (suspected)“, “common flu (confirmed via test)” , “COVID-19 (suspected)“, “COVID-19 (confirmed via test)"), number of days since condition, additional symptoms (diarrhea, asthma, other respiratory diseases (e.g. cystic fibrosis), allergies, medication, lifestyle, cardiovascular disease, blood pressure, fever, temperature, heart rate, headache, muscle ache, chills, sore throat, congestion, tightness in chest, difficulty breathing, diabetes, cancer, previous organ transplant, HIV or an impaired immune system, other long-term condition). Not all of them are mandatory to effectively send the data for Machine/Deep Learning model training.
 
-However if original data is publicly shared in Open Humans, this data and/or a resulting report may be publicly shared by OpenCOVID19-AIDetectApp. Furthermore, other information (e.g. username) associated with the public genetic data in Open Humans may be associated with a public report shared by OpenCOVID19-AIDetectApp.
+If the original data is publicly shared in Open Humans by The Application user, this data and/or a resulting report may be publicly shared by The Application. Furthermore, other information (e.g. username) associated with the public data in Open Humans may be associated with a public report shared by The Application.
 
 # Disclaimers
 
-OpenCOVID19-AIDetectApp analysis may contain errors, and may be discontinued at any time. This is described in more detail in the "About" page.
+The Application may contain errors, and may be discontinued at any time. This is described in more detail in the "About" page.
 
-OpenCOVID19-AIDetectApp is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particicular purpose, and noninfringement.
+The Application is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particicular purpose, and noninfringement.
 
-The OpenCOVID19-AIDetectApp and its original content, features, and functionality are owned by Hernán Morales Durand and OpenHumans.org and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+The Application and its original content, features, and functionality are owned by Hernán Morales Durand and OpenHumans.org and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
 
-# About the App
+# About the Application
 
   - You maintain ownership of your data.
   - You can request access and deletion of your data.
   - You are responsible for what you upload.
-  - This App does not sell your personal data.
-  - This App will NOT track you on other websites.
-  - This App will NOT use tracking pixels, web beacons, browser fingerprinting, and/or device fingerprinting.
-  - This App assumes no responsibility and liability for the contents of links to other websites.
-  - This App will NOT collect extra data about you through promotions.
-  - This App will NOT uses third-party targeted advertising
-  - This App is only available to users of a certain age.
+  - This Application does not sell your personal data.
+  - This Application will NOT track you on other websites.
+  - This Application will NOT use tracking pixels, web beacons, browser fingerprinting, and/or device fingerprinting.
+  - This Application assumes no responsibility and liability for the contents of links to other websites.
+  - This Application will NOT collect extra data about you through promotions.
+  - This Application will NOT uses third-party targeted advertising
+  - This Application is only available to users of a certain age.
 
 # About the Terms of Condition
 
-Terms may be changed any time, but will notice to the user.
-There will be a date of the last update of the terms.
+Terms may be changed any time, but will notice to the user. There will be a date of the last update of the terms.
 
