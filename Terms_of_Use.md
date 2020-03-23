@@ -2,7 +2,7 @@ _Work in Progress_
 
 # Terms of Use
 
-OpenCOVID19-AIDetectApp (from now on The Application) is a personal project of Hernán Morales Durand, whose work is supported with help from the OpenCOVID19 Community at [Just One Giant Lab (JOGL) initiative](https://app.jogl.io/project/132).
+OpenCOVID19-AIDetectApp (from now on The Application) is a community project of Hernán Morales Durand, whose work is supported with help from the OpenCOVID19 Community at [Just One Giant Lab (JOGL) initiative](https://app.jogl.io/project/132).
 
 By using this, you agree to the following terms:
 
