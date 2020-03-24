@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+          "package": "com.opencovid19.coughcheck"
     }
   }
 }
