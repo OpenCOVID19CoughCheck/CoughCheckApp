@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "ex-react-native-i18n": "^0.0.6",
     "expo": "~36.0.0",
     "expo-av": "~8.0.0",
     "react": "~16.9.0",

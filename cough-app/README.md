@@ -3,20 +3,27 @@
 Create an account on https://expo.io/
 On your Android device install the Expo app
 
-## macOS
+## macOS + iOS Build
+
+## macOS + Android Build
 
 ```bash
 brew install android-sdk
 brew install watchman
+brew install react-native-cli
+npm install -g exp
+npm install -g expo-cli
 ````
 
 Open another console:
 
 ```bash
 cd cough-app
-expo start
+yarn upgrade
+exp start
 export EXPO_DEBUG=true
-expo build:android
+exp ba
+exp doctor
 ```
 
 Open Expo on your Android Device
