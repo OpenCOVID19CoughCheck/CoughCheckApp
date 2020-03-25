@@ -1,14 +1,12 @@
-_Work in Progress_
-
 # Terms of Use
 
-OpenCOVID19-AIDetectApp (from now on The Application) is a community project of Hernán Morales Durand, whose work is supported with help from the OpenCOVID19 Community at [Just One Giant Lab (JOGL) initiative](https://app.jogl.io/project/132).
+CoughCheckApp (from now on The Application) is a community project started by Hernán Morales Durand and developed by OpenCOVID19CoughCheck organization members, whose work is supported with help from the OpenCOVID19 Community at [Just One Giant Lab (JOGL) initiative](https://app.jogl.io/project/132).
 
 By using this, you agree to the following terms:
 
 # Administration
 
-The Application is currently administered by Hernán Morales Durand as an Open Source (MIT Licensed) community project. Administrators have access to The Application operations and private data. The Application does NOT store your personal information nor does make any explicit request to store login information to any storage. If Hernán Morales Durand chooses to add additional administrators to The Application operations, the code repository (currently https://github.com/hernanmd/OpenCOVID19-AIDetectApp/) will be updated to describe these.
+The Application is currently administered by the OpenCOVID19CoughCheck organization members as an Open Source (MIT Licensed) community project. Administrators have access to The Application operations and private data. The Application does NOT store your personal information nor does make any explicit request to store login information to any storage. If the administrators chooses to add additional administrators to The Application operations, the (code repository)[https://github.com/OpenCOVID19CoughCheck/CoughCheckApp] will be updated to describe these.
 
 # Data use and privacy
 
@@ -16,7 +14,7 @@ Using the Open Humans API, The Application will have access to read your relevan
 
 The Application will access and and send a request to OpenHumans to store the following data: Your cough audio data, age, biological sex, weight, height, condition (“common flu (suspected)“, “common flu (confirmed via test)” , “COVID-19 (suspected)“, “COVID-19 (confirmed via test)"), number of days since condition, additional symptoms (diarrhea, asthma, other respiratory diseases (e.g. cystic fibrosis), allergies, medication, lifestyle, cardiovascular disease, blood pressure, fever, temperature, heart rate, headache, muscle ache, chills, sore throat, congestion, tightness in chest, difficulty breathing, diabetes, cancer, previous organ transplant, HIV or an impaired immune system, other long-term condition). Not all of them are mandatory to effectively send the data for Machine/Deep Learning model training.
 
-If the original data is publicly shared in Open Humans by The Application user, this data and/or a resulting report may be publicly shared by The Application. Furthermore, other information (e.g. username) associated with the public data in Open Humans may be associated with a public report shared by The Application.
+If the original data is publicly shared in the Open Humans repository by The Application user, this data and/or a resulting report may be publicly shared by The Application. Furthermore, other information (e.g. username) associated with the public data in Open Humans may be associated with a public report shared by The Application.
 
 # Disclaimers
 
