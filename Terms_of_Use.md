@@ -6,7 +6,7 @@ By using this, you agree to the following terms:
 
 # Administration
 
-The Application is currently administered by the OpenCOVID19CoughCheck organization members as an Open Source (MIT Licensed) community project. Administrators have access to The Application operations and private data. The Application does NOT store your personal information nor does make any explicit request to store login information to any storage. If the administrators chooses to add additional administrators to The Application operations, the (code repository)[https://github.com/OpenCOVID19CoughCheck/CoughCheckApp] will be updated to describe these.
+The Application is currently administered by the OpenCOVID19CoughCheck organization members as an Open Source (MIT Licensed) community project. Administrators have access to The Application operations and private data. The Application does NOT store your personal information nor does make any explicit request to store login information to any storage. If the administrators chooses to add additional administrators to The Application operations, the [code repository](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp]) will be updated to describe these.
 
 # Data use and privacy
 
