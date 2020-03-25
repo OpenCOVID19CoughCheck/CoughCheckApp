@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Cough Check",
-    "slug": "covid19-cough-detector",
+    "slug": "opencovid19-cough-check",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -10,6 +10,7 @@
       "web"
     ],
     "version": "1.0.0",
+    "githubUrl": "https://github.com/OpenCOVID19CoughCheck/CoughCheckApp",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -24,10 +25,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.opencovid19.coughcheck",
+      "buildNumber": "1.0.0"
     },
     "android": {
-          "package": "com.opencovid19.coughcheck"
+      "package": "com.opencovid19.coughcheck",
+      "versionCode": 1
     }
   }
 }
