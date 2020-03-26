@@ -1,4 +1,4 @@
-# <appname>
+# Description
 
 Development of AI audio app to compare the cough of a Coronavirus (COVID-19) infected individual with the cough of an uninfected individual.
 
