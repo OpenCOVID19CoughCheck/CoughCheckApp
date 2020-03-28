@@ -1,8 +1,4 @@
-# Description
-
-Development of AI audio app to compare the cough of a Coronavirus (COVID-19) infected individual with the cough of an uninfected individual.
-
-# End-goal
+# Goal
 
 The purpose of this application is to provide the global community with an application through which the user can upload a clip of themselves or a loved-one coughing to a machine-learning platform which analyzes the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
@@ -29,6 +25,7 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to.
 
   - [Figma Prototype](https://www.figma.com/file/OTTJjNQSbzJ7d9qCyLOZ9h/OpenCOVID19?node-id=0%3A1)
+  - Add your own prototype...
 
 ### Data Gathering & ML Processing
 
