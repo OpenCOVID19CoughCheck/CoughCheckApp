@@ -28,7 +28,7 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 
 The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to.
 
-  - [Figma Prototype]()
+  - [Figma Prototype](https://www.figma.com/file/OTTJjNQSbzJ7d9qCyLOZ9h/OpenCOVID19?node-id=0%3A1)
 
 ### Data Gathering & ML Processing
 
@@ -50,7 +50,7 @@ CoughCheckApp is being actively developed. Visit the to the ToDo list to contrib
 
 ## Show your support
 
-Become a financial contributor and help us sustain our community through [[Contribute](https://opencollective.com/readme-md-generator/contribute)] or <a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
+Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute) or <a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
   <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
 </a>
 
