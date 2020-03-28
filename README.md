@@ -4,9 +4,9 @@ The purpose of this application is to provide the global community with an appli
 
 # Project Links
 
-  - [Slack](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
-  - [Trello](https://trello.com/opencovid19aicoughdetectionteam)
-  - [JOGL](https://app.jogl.io/project/132)
+  - Join our [Slack channel](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
+  - Participate using our [Trello board](https://trello.com/opencovid19aicoughdetectionteam)
+  - Our project is kindly hosted and supported by [JOGL (Just One Giant Lab)](https://app.jogl.io/project/132)
   
 # Usage
 
