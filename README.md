@@ -6,95 +6,51 @@ Development of AI audio app to compare the cough of a Coronavirus (COVID-19) inf
 
 The purpose of this application is to provide the global community with an application through which the user can upload a clip of themselves or a loved-one coughing to a machine-learning platform which analyzes the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
-# Phases of implementation
+# Project Links
 
-## Development of MVP
+  - [Slack](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
+  - [Trello](https://trello.com/opencovid19aicoughdetectionteam)
+  - [JOGL](https://app.jogl.io/project/132)
+  
+# Usage
 
-The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to
+# Code Contributors
 
-## Data Gathering & ML Processing
+## Phases of implementation
+
+### Development of MVP
+
+The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to.
+
+  - [Figma Prototype]()
+
+### Data Gathering & ML Processing
 
 The second step is to onboard as many users as feasible (both uninfected and infected individuals) and setup machine learning capabilities within the application, which processes audio clips uploaded to discern discrepancies between the coughs of an infected individuals and the coughs of an uninfected individual.
 
-## COVID-19 Detection Application
+### COVID-19 Detection Application
 
 Pivot the application to return predictions based on audio files uploaded once confidence level in ML Processing is high enough.
 
-# Development
+## 🤝 Contributing
 
-Create an account on https://expo.io/
-On your mobile device install the Expo app
+Feel free to check [issues page](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/issues) if you want to contribute.
 
-## macOS
+[Check the contributing guide](./CONTRIBUTING.md)
 
-### Getting Started
+# Status
 
-#### Homebrew:
+CoughCheckApp is being actively developed. Visit the to the ToDo list to contribute or see the features in progress.
 
-Optional dependencies:
+## Show your support
 
-```bash
-brew install android-sdk
-brew install watchman
-brew install react-native-cli
-```
+Please ⭐️ this repository if this project can help you!
 
-Installing yarn will install node by default:
+<a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+</a>
 
-```bash
-brew install yarn
-yarn global add expo-cli
-```
+## 📝 License
 
-Open another console:
-
-```bash
-git clone https://github.com/OpenCOVID19CoughCheck/CoughCheckApp.git
-cd CoughCheckApp
-yarn
-yarn start
-```
-
-Open Expo on your Android Device or Camera on iOS
-Scan QR code
-
-Check the output log, after you record some seconds it should look like this:
-
-```bash
-[00:28:57] Your URL is: exp://192.168.1.120:19000
-
-[00:28:57] Instructions to open this project on a physical device
-[00:28:57] Android devices: scan the above QR code.
-[00:28:57] iOS devices: run exp send -s <your-phone-number-or-email> in this project directory in another terminal window to send the URL to your device.
-
-[00:28:57] Instructions to open this project on a simulator
-[00:28:57] If you already have the simulator installed, run exp ios or exp android in this project directory in another terminal window.
-
-[00:28:57] Logs for your project will appear below. Press Ctrl+C to exit.
-[00:29:49] Finished building JavaScript bundle in 31751ms.
-[00:29:51] Running "main" with
-# ...
-```
-
-## Libraries
-
-We will try to use Expo to its fullest for rapid cross-platform development.
-Expo covers a massive territory so when implementing a feature, please check Expo's documentation first.
-
-- expo-av (Audio recording/playback)
-- expo-app-auth (OAuth)
-- expo-localization & i18n-js (Text localization)
-- react-navigation
-- react-native-paper (Google's Material UI look and feel)
-- formik & yup (User input / form state management)
-
-# Integrations
-
-## Open Humans
-
-Open Humans is the platform that <appname> will integrate with to house data clips uploaded by user for the
-https://www.openhumans.org/
-
-## OAuth2
-
-OAuth2 is the platform used to authenticate users against.
+Copyright © 2020 [OpenCOVID19CoughCheck Team](https://github.com/OpenCOVID19CoughCheck)
+This project is [MIT](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/blob/master/LICENSE) licensed.
