@@ -14,7 +14,13 @@ The purpose of this application is to provide the global community with an appli
   
 # Usage
 
-# Code Contributors
+WiP
+
+# Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+
+<a href="https://github.com/OpenCOVID19CoughCheck/coughcheckapp/graphs/contributors"><img src="https://opencollective.com/coughcheckapp/contributors.svg?width=890&button=false" /></a>
 
 ## Phases of implementation
 
@@ -44,11 +50,11 @@ CoughCheckApp is being actively developed. Visit the to the ToDo list to contrib
 
 ## Show your support
 
-Please ⭐️ this repository if this project can help you!
-
-<a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
+Become a financial contributor and help us sustain our community through [[Contribute](https://opencollective.com/readme-md-generator/contribute)] or <a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
   <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
 </a>
+
+Please ⭐️ this repository if this project can help you!
 
 ## 📝 License
 
