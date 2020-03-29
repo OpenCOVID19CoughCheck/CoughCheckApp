@@ -1,19 +1,19 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 export function RecordButton({ onPress }) {
 	return (
-		<TouchableOpacity
-			style={styles.recordButton}
-			onPress={onPress}
-		></TouchableOpacity>
+		<TouchableOpacity style={styles.recordButton} onPress={onPress}>
+			<Icon name="microphone" size={50} color="#333" />
+		</TouchableOpacity>
 	)
 }
 
 export function StopButton({ onPress }) {
 	return (
 		<TouchableOpacity style={styles.recordButton} onPress={onPress}>
-			<View style={styles.stopIcon} />
+			<Icon name="stop" size={50} color="#333" />
 		</TouchableOpacity>
 	)
 }
@@ -21,7 +21,7 @@ export function StopButton({ onPress }) {
 export function PlayButton({ onPress }) {
 	return (
 		<TouchableOpacity style={styles.recordButton} onPress={onPress}>
-			<Text style={styles.playIcon}>▶︎</Text>
+			<Icon name="play" size={50} color="#333" style={{ marginLeft: 10 }} />
 		</TouchableOpacity>
 	)
 }
@@ -40,14 +40,5 @@ const styles = StyleSheet.create({
 		backgroundColor: 'crimson',
 		justifyContent: 'center',
 		alignItems: 'center',
-	},
-	stopIcon: {
-		width: 60,
-		height: 60,
-		backgroundColor: '#333',
-	},
-	playIcon: {
-		fontSize: 92,
-		color: '#333',
 	},
 })
