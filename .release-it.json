@@ -1,0 +1,19 @@
+{
+	"git": {
+		"commitMessage": "Release v${version}",
+		"tagAnnotation": "Release v${version}",
+		"requireCleanWorkingDir": false,
+		"changelog": "npx auto-changelog --stdout --commit-limit false -u --template ./.changelog.hbs"
+	},
+	"github": {
+		"release": false,
+		"releaseName": "v${version}",
+		"tokenRef": "GITHUB_TOKEN"
+	},
+	"npm": {
+		"publish": false
+	},
+	"hooks": {
+		"after:bump": "npx auto-changelog -p"
+	}
+}

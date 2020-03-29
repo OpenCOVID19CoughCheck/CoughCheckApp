@@ -1,9 +1,25 @@
 {
 	"name": "opencovid19-cough-check",
+	"version": "0.1.0",
+	"description": "Development of AI audio app to compare the cough of a Coronavirus (COVID-19) infected individual with the cough of an uninfected individual.",
+	"keywords": [
+		"COVID-19",
+		"Coronavirus",
+		"Cough",
+		"CoughCheck",
+		"SARS-CoV-2",
+		"AI COVID-19",
+		"COVID19",
+		"AI",
+		"Machine Learning"
+	],
+	"homepage": "https://app.jogl.io/project/132",
 	"repository": {
 		"url": "https://github.com/OpenCOVID19CoughCheck/CoughCheckApp"
 	},
+	"license": "MIT",
 	"contributors": [
+		"Hernán Morales Durand (http://www.github.com/hernanmd/)",
 		"Matt Black <mb@mattblack.io> (https://mattblack.io/)"
 	],
 	"main": "node_modules/expo/AppEntry.js",
@@ -39,6 +55,7 @@
 		"react-native-safe-area-context": "0.6.0",
 		"react-native-screens": "2.0.0-alpha.12",
 		"react-native-web": "~0.11.7",
+		"release-it": "^13.5.0",
 		"styled-components": "^5.0.1",
 		"yup": "^0.28.3"
 	},
@@ -48,6 +65,7 @@
 		"@types/react": "~16.9.0",
 		"@types/react-native": "~0.60.23",
 		"@types/yup": "^0.26.33",
+		"@release-it/conventional-changelog": "^1.1.0",
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-preset-expo": "~8.0.0",
 		"husky": "^4.2.3",
