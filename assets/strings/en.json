@@ -1,6 +1,7 @@
 {
 	"app_name": "OpenCOVID19 CoughCheck",
 	"navigation": {
+		"logout": "Logout",
 		"complete_questionnaire": "Complete The Questionnaire"
 	},
 	"collection_phase": "(Collection Phase)",
