@@ -12,7 +12,8 @@
 		"android": "expo start --android",
 		"ios": "expo start --ios",
 		"web": "expo start --web",
-		"eject": "expo eject"
+		"eject": "expo eject",
+		"update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
 	},
 	"dependencies": {
 		"@expo/vector-icons": "^10.0.6",
@@ -52,7 +53,8 @@
 		"husky": "^4.2.3",
 		"prettier": "2.0.2",
 		"pretty-quick": "^2.0.1",
-		"typescript": "~3.8.3"
+		"typescript": "~3.8.3",
+		"weallcontribute": "^1.0.9"
 	},
 	"private": true,
 	"husky": {
