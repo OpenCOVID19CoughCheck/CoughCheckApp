@@ -43,3 +43,9 @@ export const FormViewStyled = styled(KeyboardAvoidingView)`
 	background-color: #ecf0f1;
 	padding: 8px;
 `
+
+export const TextSignInStyled = styled.Text`
+	font-size: 36px;
+	color: #ccc;
+	text-align: center;
+`

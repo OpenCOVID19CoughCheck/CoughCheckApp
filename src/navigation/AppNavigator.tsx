@@ -6,7 +6,7 @@ import QuestionnaireScreen from 'src/questionnaire/QuestionnaireScreen'
 import CoughRecorderScreen from 'src/cough-recorder/CoughRecorderScreen'
 import { useAuthContext } from 'src/globalState/AuthContext'
 import SplashScreen from 'src/components/SplashScreen'
-import SignInScreen from './SignInScreen'
+import SignInScreen from 'src/navigation/SignInScreen'
 import { AsyncStorage } from 'react-native'
 
 const Stack = createStackNavigator()
