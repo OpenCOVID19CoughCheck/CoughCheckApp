@@ -1,30 +1,16 @@
-# Description
-
-Development of AI audio app to compare the cough of a Coronavirus (COVID-19) infected individual with the cough of an uninfected individual.
-
-# End-goal
+# Goal
 
 The purpose of this application is to provide the global community with an application through which the user can upload a clip of themselves or a loved-one coughing to a machine-learning platform which analyzes the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
-# Phases of implementation
+# Project Links
 
-## Development of MVP
+  - Join our [Slack channel](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
+  - Participate using our [Trello board](https://trello.com/opencovid19aicoughdetectionteam)
+  - Our project is kindly hosted and supported by [JOGL (Just One Giant Lab)](https://app.jogl.io/project/132)
+  
+# Usage
 
-The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to
-
-## Data Gathering & ML Processing
-
-The second step is to onboard as many users as feasible (both uninfected and infected individuals) and setup machine learning capabilities within the application, which processes audio clips uploaded to discern discrepancies between the coughs of an infected individuals and the coughs of an uninfected individual.
-
-## COVID-19 Detection Application
-
-Pivot the application to return predictions based on audio files uploaded once confidence level in ML Processing is high enough.
-
-# Development
-
-Create an account on https://expo.io/
-On your mobile device install the Expo app
-
+WiP
 ## macOS
 
 ### Getting Started
@@ -46,7 +32,7 @@ brew install yarn
 yarn global add expo-cli
 ```
 
-Open another console:
+### Execute the project
 
 ```bash
 git clone https://github.com/OpenCOVID19CoughCheck/CoughCheckApp.git
@@ -82,47 +68,50 @@ yarn
 yarn start
 ```
 
-Open Expo on your Android Device or Camera on iOS
-Scan QR code
+# Contributors
 
-Check the output log, after you record some seconds it should look like this:
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
 
-```bash
-[00:28:57] Your URL is: exp://192.168.1.120:19000
+<a href="https://github.com/OpenCOVID19CoughCheck/coughcheckapp/graphs/contributors"><img src="https://opencollective.com/coughcheckapp/contributors.svg?width=890&button=false" /></a>
 
-[00:28:57] Instructions to open this project on a physical device
-[00:28:57] Android devices: scan the above QR code.
-[00:28:57] iOS devices: run exp send -s <your-phone-number-or-email> in this project directory in another terminal window to send the URL to your device.
+## Phases of implementation
 
-[00:28:57] Instructions to open this project on a simulator
-[00:28:57] If you already have the simulator installed, run exp ios or exp android in this project directory in another terminal window.
+### Development of MVP
 
-[00:28:57] Logs for your project will appear below. Press Ctrl+C to exit.
-[00:29:49] Finished building JavaScript bundle in 31751ms.
-[00:29:51] Running "main" with
-# ...
-```
+The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to.
 
-## Libraries
+  - [Figma Prototype](https://www.figma.com/file/OTTJjNQSbzJ7d9qCyLOZ9h/OpenCOVID19?node-id=0%3A1)
+  - Add your own prototype...
 
-We will try to use Expo to its fullest for rapid cross-platform development.
-Expo covers a massive territory so when implementing a feature, please check Expo's documentation first.
+### Data Gathering & ML Processing
 
-- expo-av (Audio recording/playback)
-- expo-app-auth (OAuth)
-- expo-localization & i18n-js (Text localization)
-- react-navigation
-- react-native-paper (Google's Material UI look and feel)
-- formik & yup (User input / form state management)
 
-# Integrations
+The second step is to onboard as many users as feasible (both uninfected and infected individuals) and setup machine learning capabilities within the application, which processes audio clips uploaded to discern discrepancies between the coughs of an infected individuals and the coughs of an uninfected individual.
 
-## Open Humans
+### COVID-19 Detection Application
 
-Open Humans is the platform that <appname> will integrate with to house data clips uploaded by user for the
-https://www.openhumans.org/
+Pivot the application to return predictions based on audio files uploaded once confidence level in ML Processing is high enough.
 
-## OAuth2
+## 🤝 Contributing
+
+Feel free to check [issues page](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/issues) if you want to contribute.
+
+[Check the contributing guide](./CONTRIBUTING.md)
+
+# Status
+
+CoughCheckApp is being actively developed. Visit the to the ToDo list to contribute or see the features in progress.
+
+## Show your support
+
+Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute) or <a href="https://liberapay.com/OpenCOVID19CoughCheck/donate">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+</a>
+
+Please ⭐️ this repository if this project can help you!
+
+## 📝 License
+
 
 OAuth2 is the platform used to authenticate users against.
 
@@ -136,3 +125,8 @@ OAuth2 is the platform used to authenticate users against.
 - [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template) and recently launched [BuilderX](https://builderx.io/), is a browser based design tool that codes React Native. **Basically will allow to align UI/UX effort with what we produce in the app in a faster way**.
 - [ ] I would change the styling approach from Object-based style to `styled-components`.
 - [ ] Start adding tests with [`react-native-testing-library`](https://callstack.github.io/react-native-testing-library/docs/getting-started).
+
+=======
+Copyright © 2020 [OpenCOVID19CoughCheck Team](https://github.com/OpenCOVID19CoughCheck)
+This project is [MIT](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/blob/master/LICENSE) licensed.
+
