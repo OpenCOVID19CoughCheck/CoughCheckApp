@@ -2,7 +2,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from 'src/home/HomeScreen'
-import QuestionnaireScreen from 'src/questionaire/QuestionnaireScreen'
+import QuestionnaireScreen from 'src/questionnaire/QuestionnaireScreen'
 import CoughRecorderScreen from 'src/cough-recorder/CoughRecorderScreen'
 
 const Stack = createStackNavigator()

@@ -5,7 +5,6 @@ import { Alert, StyleSheet, Text, TextInput, View } from 'react-native'
 import { Button } from 'react-native-paper'
 import * as Yup from 'yup'
 import { FormViewStyled } from 'src/components/styledComponents'
-import styled from 'styled-components/native'
 
 export default function QuestionnaireScreen() {
 	const emailInput = React.useRef(null)
