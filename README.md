@@ -98,3 +98,12 @@ https://www.openhumans.org/
 ## OAuth2
 
 OAuth2 is the platform used to authenticate users against.
+
+## TODOs
+
+- [x] Adding `prettier` & `editorconfig` so we all have a consistent code (also husky so we are sure not breaking existing style rules with new commits)
+- [ ] Adding `native-base` to implement the login.
+- [ ] Adding `oAuth2` and authentication routes
+- [ ] Migrate existing UI components from `react-native-paper` to `native-base` components
+- [ ] I would change the styling approach from Object-based style to `styled-components`
+- [ ] Start adding tests with [`react-native-testing-library`](https://callstack.github.io/react-native-testing-library/docs/getting-started)
