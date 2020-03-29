@@ -51,6 +51,33 @@ Open another console:
 ```bash
 git clone https://github.com/OpenCOVID19CoughCheck/CoughCheckApp.git
 cd CoughCheckApp
+```
+
+Then we need to add the credentials to be able to connect to Open Humans OAuth by adding the right properties into a file `envLocal.json` in the root of the project
+
+```bash
+touch envLocal.json
+```
+
+Then open it and add the following properties with the real values:
+
+```json
+{
+  "expo": {
+    "extra": {
+      "OH_OAUTH_URL": "TO-FILL",
+      "OH_OAUTH_URL_TOKEN": "TO-FILL",
+      "REMOTE_ACCESS_CONSUMER_KEY": "TO-FILL,
+      "CLIENT_ID": "TO-FILL",
+      "CLIENT_SECRET": "TO-FILL"
+    }
+  }
+}
+```
+
+Then we will be able to start the project:
+
+```bash
 yarn
 yarn start
 ```
@@ -105,7 +132,7 @@ OAuth2 is the platform used to authenticate users against.
 - [x] Adding `native-base` to implement the login.
 - [x] Adding a [SafeArea layout](https://reactnavigation.org/docs/handling-safe-area/)/Keyboard layouts, so we are safe for devices with notches and able to reuse in different views.
 - [x] Add Authentication routes and Global Context.
-- [ ] Adding `oAuth2`.
+- [x] Adding `oAuth2`.
 - [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template) and recently launched [BuilderX](https://builderx.io/), is a browser based design tool that codes React Native. **Basically will allow to align UI/UX effort with what we produce in the app in a faster way**.
 - [ ] I would change the styling approach from Object-based style to `styled-components`.
 - [ ] Start adding tests with [`react-native-testing-library`](https://callstack.github.io/react-native-testing-library/docs/getting-started).
