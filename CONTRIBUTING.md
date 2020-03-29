@@ -85,6 +85,7 @@ If you want to go the usual route and run the project locally, though:
 
 * [Install Node.js](https://nodejs.org/en/download/)
 * [Fork the project](https://guides.github.com/activities/forking/#fork)
+* [Setup environment](./DEVELOPING.md)
 
 Then in your terminal:
 * `cd path/to/your/clone`
