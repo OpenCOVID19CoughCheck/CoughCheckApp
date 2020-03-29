@@ -1,34 +1,33 @@
-import * as React from 'react'
-import { View, StyleSheet } from 'react-native'
-import { Button } from 'react-native-paper'
 import i18n from 'i18n-js'
+import * as React from 'react'
+import { StyleSheet } from 'react-native'
+import { Button } from 'react-native-paper'
+import { StandardViewStyled } from 'src/components/styledComponents'
+
+import styled from 'styled-components/native'
+
+const ButtonStyled = styled(Button)`
+	margin-bottom: 20px;
+`
 
 export default function HomeScreen({ navigation }) {
 	return (
-		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Button
-				style={styles.button}
+		<StandardViewStyled center>
+			<ButtonStyled
 				mode="contained"
 				onPress={() => {
 					navigation.navigate('CoughRecorder')
 				}}
 			>
 				Record a Cough
-			</Button>
+			</ButtonStyled>
 			<Button
-				style={styles.button}
 				onPress={() => {
 					navigation.navigate('Questionnaire')
 				}}
 			>
 				{i18n.t('navigation.complete_questionnaire')}
 			</Button>
-		</View>
+		</StandardViewStyled>
 	)
 }
-
-const styles = StyleSheet.create({
-	button: {
-		marginBottom: 20,
-	},
-})

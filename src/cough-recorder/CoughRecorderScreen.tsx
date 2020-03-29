@@ -6,6 +6,7 @@ import {
 	StopButton,
 } from 'src/cough-recorder/cough-recorder-buttons'
 import useAudioRecorder from 'src/cough-recorder/useAudioRecorder'
+import { StandardViewStyled } from 'src/components/styledComponents'
 
 export default function CoughRecorderScreen() {
 	const {
@@ -19,21 +20,21 @@ export default function CoughRecorderScreen() {
 
 	if (recordedSound) {
 		return (
-			<View style={styles.container}>
+			<StandardViewStyled style={styles.container}>
 				<PlayButton onPress={handlePlaySound} />
-			</View>
+			</StandardViewStyled>
 		)
 	}
 
 	if (recordingInstance) {
 		return (
-			<View style={styles.container}>
+			<StandardViewStyled style={styles.container}>
 				{!isRecording ? (
 					<RecordButton onPress={handleStartRecording} />
 				) : (
 					<StopButton onPress={handleStopRecording} />
 				)}
-			</View>
+			</StandardViewStyled>
 		)
 	}
 

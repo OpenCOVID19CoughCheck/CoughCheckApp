@@ -1,11 +1,9 @@
 import * as React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import { Container, Root } from 'native-base'
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import * as Localization from 'expo-localization'
 import i18n from 'i18n-js'
-import HomeScreen from 'src/home/HomeScreen'
-import QuestionnaireScreen from 'src/questionaire/QuestionnaireScreen'
-import CoughRecorderScreen from 'src/cough-recorder/CoughRecorderScreen'
+import AppNavigator from 'src/navigation/AppNavigator'
 
 i18n.translations = {
 	en: require('assets/strings/en.json'),
@@ -14,17 +12,13 @@ i18n.translations = {
 i18n.locale = Localization.locale
 i18n.fallbacks = true
 
-const Stack = createStackNavigator()
-
 function App() {
 	return (
-		<NavigationContainer>
-			<Stack.Navigator>
-				<Stack.Screen name="Home" component={HomeScreen} />
-				<Stack.Screen name="Questionnaire" component={QuestionnaireScreen} />
-				<Stack.Screen name="CoughRecorder" component={CoughRecorderScreen} />
-			</Stack.Navigator>
-		</NavigationContainer>
+		<Root>
+			<SafeAreaProvider>
+				<AppNavigator />
+			</SafeAreaProvider>
+		</Root>
 	)
 }
 

@@ -103,6 +103,7 @@ OAuth2 is the platform used to authenticate users against.
 
 - [x] Adding `prettier` & `editorconfig` so we all have a consistent code (also husky so we are sure not breaking existing style rules with new commits)
 - [x] Adding `native-base` to implement the login.
+- [x] Adding a [SafeArea layout](https://reactnavigation.org/docs/handling-safe-area/)/Keyboard layouts, so we are safe for devices with notches and able to reuse in different views.
 - [ ] Adding `oAuth2` and authentication routes.
 - [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template) and recently launched [BuilderX](https://builderx.io/), is a browser based design tool that codes React Native. **Basically will allow to align UI/UX effort with what we produce in the app in a faster way**.
 - [ ] I would change the styling approach from Object-based style to `styled-components`.
