@@ -1,29 +1,21 @@
-import React from 'react'
-import {
-	Text,
-	View,
-	StyleSheet,
-	TextInput,
-	Alert,
-	KeyboardAvoidingView,
-} from 'react-native'
-import { Button } from 'react-native-paper'
 import { Formik } from 'formik'
-import * as Yup from 'yup'
 import i18n from 'i18n-js'
+import React from 'react'
+import { Alert, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Button } from 'react-native-paper'
+import * as Yup from 'yup'
+import { FormViewStyled } from 'src/components/styledComponents'
 
 export default function QuestionnaireScreen() {
 	const emailInput = React.useRef(null)
 	return (
-		<KeyboardAvoidingView style={styles.container}>
+		<FormViewStyled behavior="position">
 			<Text style={styles.title}>{i18n.t('collection_phase')}</Text>
 			<Formik
 				initialValues={{ name: '', email: '' }}
 				validationSchema={Yup.object({
 					name: Yup.string().required('Required'),
-					email: Yup.string()
-						.email('Invalid Email')
-						.required('Required'),
+					email: Yup.string().email('Invalid Email').required('Required'),
 				})}
 				onSubmit={(values, formikActions) => {
 					setTimeout(() => {
@@ -34,7 +26,7 @@ export default function QuestionnaireScreen() {
 					}, 500)
 				}}
 			>
-				{props => (
+				{(props) => (
 					<View>
 						<TextInput
 							onChangeText={props.handleChange('name')}
@@ -81,16 +73,11 @@ export default function QuestionnaireScreen() {
 					</View>
 				)}
 			</Formik>
-		</KeyboardAvoidingView>
+		</FormViewStyled>
 	)
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#ecf0f1',
-		padding: 8,
-	},
 	title: {
 		margin: 24,
 		fontSize: 24,

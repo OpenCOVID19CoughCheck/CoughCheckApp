@@ -11,6 +11,62 @@ The purpose of this application is to provide the global community with an appli
 # Usage
 
 WiP
+## macOS
+
+### Getting Started
+
+#### Homebrew:
+
+Optional dependencies:
+
+```bash
+brew install android-sdk
+brew install watchman
+brew install react-native-cli
+```
+
+Installing yarn will install node by default:
+
+```bash
+brew install yarn
+yarn global add expo-cli
+```
+
+### Execute the project
+
+```bash
+git clone https://github.com/OpenCOVID19CoughCheck/CoughCheckApp.git
+cd CoughCheckApp
+```
+
+Then we need to add the credentials to be able to connect to Open Humans OAuth by adding the right properties into a file `envLocal.json` in the root of the project
+
+```bash
+touch envLocal.json
+```
+
+Then open it and add the following properties with the real values:
+
+```json
+{
+  "expo": {
+    "extra": {
+      "OH_OAUTH_URL": "TO-FILL",
+      "OH_OAUTH_URL_TOKEN": "TO-FILL",
+      "REMOTE_ACCESS_CONSUMER_KEY": "TO-FILL,
+      "CLIENT_ID": "TO-FILL",
+      "CLIENT_SECRET": "TO-FILL"
+    }
+  }
+}
+```
+
+Then we will be able to start the project:
+
+```bash
+yarn
+yarn start
+```
 
 # Contributors
 
@@ -28,6 +84,7 @@ The first step of this project will be to develop the Minimum Viable Product for
   - Add your own prototype...
 
 ### Data Gathering & ML Processing
+
 
 The second step is to onboard as many users as feasible (both uninfected and infected individuals) and setup machine learning capabilities within the application, which processes audio clips uploaded to discern discrepancies between the coughs of an infected individuals and the coughs of an uninfected individual.
 
@@ -55,5 +112,21 @@ Please ⭐️ this repository if this project can help you!
 
 ## 📝 License
 
+
+OAuth2 is the platform used to authenticate users against.
+
+## TODOs
+
+- [x] Adding `prettier` & `editorconfig` so we all have a consistent code (also husky so we are sure not breaking existing style rules with new commits)
+- [x] Adding `native-base` to implement the login.
+- [x] Adding a [SafeArea layout](https://reactnavigation.org/docs/handling-safe-area/)/Keyboard layouts, so we are safe for devices with notches and able to reuse in different views.
+- [x] Add Authentication routes and Global Context.
+- [x] Adding `oAuth2`.
+- [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template) and recently launched [BuilderX](https://builderx.io/), is a browser based design tool that codes React Native. **Basically will allow to align UI/UX effort with what we produce in the app in a faster way**.
+- [ ] I would change the styling approach from Object-based style to `styled-components`.
+- [ ] Start adding tests with [`react-native-testing-library`](https://callstack.github.io/react-native-testing-library/docs/getting-started).
+
+=======
 Copyright © 2020 [OpenCOVID19CoughCheck Team](https://github.com/OpenCOVID19CoughCheck)
 This project is [MIT](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/blob/master/LICENSE) licensed.
+

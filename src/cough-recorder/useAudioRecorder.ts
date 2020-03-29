@@ -13,7 +13,6 @@ async function setupAudio({ onPermissionDenied, onPrepared, onError }) {
 		}
 		await Audio.setAudioModeAsync(recordMode)
 		recording = new Audio.Recording()
-		// recording.setOnRecordingStatusUpdate(console.log)
 		await recording.prepareToRecordAsync(
 			Audio.RECORDING_OPTIONS_PRESET_HIGH_QUALITY
 		)
@@ -36,7 +35,7 @@ export default function useAudioRecorder() {
 			onPermissionDenied: () => {
 				console.error('Permissions were denied') // TODO: Report and handle this
 			},
-			onError: e => {
+			onError: (e) => {
 				console.error('Error thrown', e) // TODO: Send an error report
 			},
 			onPrepared: setRecordingInstance,
