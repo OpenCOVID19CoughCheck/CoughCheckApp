@@ -1,6 +1,6 @@
 {
 	"name": "opencovid19-cough-check",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Development of AI audio app to compare the cough of a Coronavirus (COVID-19) infected individual with the cough of an uninfected individual.",
 	"keywords": [
 		"COVID-19",
