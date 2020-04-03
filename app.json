@@ -1,37 +1,30 @@
 {
-  "expo": {
-    "name": "Cough Check",
-    "slug": "opencovid19-cough-check",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
-    "githubUrl": "https://github.com/OpenCOVID19CoughCheck/CoughCheckApp",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.opencovid19.coughcheck",
-      "buildNumber": "1.0.0"
-    },
-    "android": {
-      "package": "com.opencovid19.coughcheck",
-      "versionCode": 1
-    }
-  }
+	"expo": {
+		"name": "Cough Check",
+		"slug": "opencovid19-cough-check",
+		"privacy": "public",
+		"platforms": ["ios", "android", "web"],
+		"version": "1.0.0",
+		"githubUrl": "https://github.com/OpenCOVID19CoughCheck/CoughCheckApp",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"splash": {
+			"image": "./assets/images/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.opencovid19.coughcheck",
+			"buildNumber": "1.0.0"
+		},
+		"android": {
+			"package": "com.opencovid19.coughcheck",
+			"versionCode": 1
+		}
+	}
 }
