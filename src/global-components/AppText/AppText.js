@@ -1,7 +1,7 @@
-// import React, { Component } from 'react'
-import { Text } from 'react-native'
+import React from 'react'
+import { Text, StyleSheet } from 'react-native'
 
-const AppText = (props) => {
+export const AppText = (props) => {
 	return <Text style={styles.pText}>{props.children}</Text>
 }
 
@@ -14,5 +14,3 @@ const styles = StyleSheet.create({
 		letterSpacing: 0.36,
 	},
 })
-
-export default AppText
