@@ -43,12 +43,11 @@ This project exists thanks to all the people who contribute.
 
 Show your support
 
-Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute) : <a href="https://opencollective.com/coughcheckapp/donate" target="_blank">
-  <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=100 />
-</a>
+<a href="https://opencollective.com/coughcheckapp/donate" target="_blank">
+  <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=200 />
+</a> Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute)
 
-You can also donate using Liberapay <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-
+ <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a> You can also donate using Liberapay
 # Status
 
 CoughCheckApp is being actively developed. Visit the to the ToDo list to contribute or see the features in progress.
