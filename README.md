@@ -44,10 +44,10 @@ This project exists thanks to all the people who contribute.
 Show your support
 
 Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute) : <a href="https://opencollective.com/coughcheckapp/donate" target="_blank">
-  <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=300 />
+  <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=100 />
 </a>
 
-<img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+You can also donate using Liberapay <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 # Status
 
@@ -64,7 +64,7 @@ We are currently using the Open Source [MIT License](./LICENSE.md)
 - [x] Adding a [SafeArea layout](https://reactnavigation.org/docs/handling-safe-area/)/Keyboard layouts, so we are safe for devices with notches and able to reuse in different views.
 - [x] Add Authentication routes and Global Context.
 - [x] Adding `oAuth2`.
-- [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template) and recently launched [BuilderX](https://builderx.io/), is a browser based design tool that codes React Native. **Basically will allow to align UI/UX effort with what we produce in the app in a faster way**.
+- [ ] Migrate existing UI components from `react-native-paper` to `native-base` components. [Here their reasons](https://github.com/GeekyAnts/NativeBase#2-why-nativebase) to make this choice and for me mainly because **they are wider used** and they provide both [Sketch/Illustrator/Figma compatible design components](https://nativebase.io/sketch-template).
 - [ ] I would change the styling approach from Object-based style to `styled-components`.
 - [ ] Start adding tests with [`react-native-testing-library`](https://callstack.github.io/react-native-testing-library/docs/getting-started).
 
