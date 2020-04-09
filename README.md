@@ -7,7 +7,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
-  <img src="assets/images/logo.svg" width="600">
+  <img src="assets/images/logo.svg" width="350">
 </p>
 
 # Goal
