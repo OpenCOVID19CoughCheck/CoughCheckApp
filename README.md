@@ -1,6 +1,8 @@
 # Goal
 
-The purpose of this application is to provide the global community with an application through which the user can upload a clip of themselves or a loved-one coughing to a machine-learning platform which analyzes the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
+The purpose of this application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. The recorded coughs with user-provided and consented associated data will be encrypted on device to protect user privacy, and then will be uploaded to an external privacy-concerned repository to help in the detection of COVID-19 coughs by a machine-learning platform. The external repository should provide individual accounts for each user, encryption of the uploaded data, and offer a secure channel (for example OAuth2) as end-points for secure communication. All of the data sent through CoughCheck is owned by you. You own your voice and potential cough signatures. All the Application code is Open Source, you can view it, check the source code and validate our builds. We want to enforce to people the real privacy danger of recording their voices and coughs to any party without clear intentions and regulations.
+
+The Machine-Learning module will analyze the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
 # Project Links
 
@@ -45,7 +47,7 @@ Show your support
 
 <a href="https://opencollective.com/coughcheckapp/donate" target="_blank">
   <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=200 />
-</a> Become a financial contributor and help us sustain our community through [OpenCollective](https://opencollective.com/coughcheckapp/contribute)
+</a> Become a financial contributor and help us sustain our community through OpenCollective
 
  <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a> You can also donate using Liberapay
 # Status
