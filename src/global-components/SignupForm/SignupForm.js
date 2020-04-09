@@ -1,63 +1,134 @@
 import React from 'react'
-import { Button, TextInput } from 'react-native-paper'
-import { StyleSheet, View } from 'react-native'
-import { Checkbox } from '../Checkbox/Checkbox.js'
-import { AppText } from '../AppText/AppText.js'
+import * as Yup from 'yup'
+import { Formik } from 'formik'
+// import i18n from 'i18n-js'
+import {
+	Alert,
+	Text,
+	TextInput,
+	TouchableOpacity,
+	Button,
+	StyleSheet,
+	View,
+	KeyboardAvoidingView,
+} from 'react-native'
+import { CheckBox } from 'react-native-elements'
 
 export const SignupForm = (props) => {
-	const [email, setEmail] = React.useState('')
-	const [password, setPassword] = React.useState('')
-
+	const passwordInput = React.useRef(null)
 	return (
-		<View>
-			<TextInput
-				style={[styles.textInput, styles.spaceS]}
-				onChangeText={(email) => setEmail(email)}
-				value={email}
-				placeholder={'Username or Email'}
-				secureTextEntry
-				// keyboardType="email-address"
-				// autoCapitalize="none"
-				// autoCorrect={false}
-				// returnKeyType="Next"
-				// onSubmitEditing={() => this.passwordInput.focus()}
-			/>
-			<TextInput
-				style={[styles.textInput, styles.spaceS]}
-				onChangeText={(password) => setPassword(password)}
-				value={password}
-				placeholder={'Password'}
-				secureTextEntry
-				// returnKeyType="Go"
-				// ref={(input) => this.passwordInput = input}
-			/>
-			<Button
-				style={[styles.button, styles.spaceM]}
-				contentStyle={{ height: 60 }}
-				mode="contained"
-				// onPress={() => {
-				// 	dispatch({
-				// 		type: 'SIGN_IN',
-				// 		token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
-				// 	})
-				// }}
+		<KeyboardAvoidingView behavior={'position'}>
+			<Formik
+				initialValues={{ email: '', password: '', check: false }}
+				validationSchema={Yup.object({
+					email: Yup.string().email('Invalid Email').required('Required'),
+					password: Yup.string().required('Required'),
+					check: Yup.string().required('Required').oneOf([true]),
+				})}
+				onSubmit={(values, formikActions) => {
+					setTimeout(() => {
+						Alert.alert(JSON.stringify(values))
+						// Important: Make sure to setSubmitting to false so our loading indicator
+						// goes away.
+						formikActions.setSubmitting(false)
+					}, 500)
+				}}
 			>
-				Sign up
-			</Button>
-			<AppText styles={styles.spaceM}>All your data will be anonymised</AppText>
-			<Checkbox />
-		</View>
+				{(props) => (
+					<View>
+						<TextInput
+							onChangeText={props.handleChange('email')}
+							onBlur={props.handleBlur('email')}
+							value={props.values.email}
+							// autoFocus
+							placeholder="Email Address"
+							style={styles.input}
+							onSubmitEditing={() => {
+								passwordInput.current.focus()
+							}}
+						/>
+						{props.touched.email && props.errors.email ? (
+							<Text style={styles.error}>{props.errors.email}</Text>
+						) : null}
+						<TextInput
+							onChangeText={props.handleChange('password')}
+							onBlur={props.handleBlur('password')}
+							value={props.values.password}
+							placeholder="Password"
+							secureTextEntry={true}
+							style={styles.input}
+							ref={passwordInput}
+						/>
+						{props.touched.password && props.errors.password ? (
+							<Text style={styles.error}>{props.errors.password}</Text>
+						) : null}
+						<TouchableOpacity
+							onPress={props.handleSubmit}
+							accessibilityLabel="Submit button"
+						>
+							<View style={styles.signupButton}>
+								<Text style={styles.signupButtonText}>Sign Up</Text>
+							</View>
+						</TouchableOpacity>
+
+						<CheckBox
+							containerStyle={styles.checkboxContainer}
+							wrapperStyle={styles.checkboxWrapper}
+							checkedIcon="check-box"
+							iconType="material"
+							uncheckedIcon="check-box-outline-blank"
+							title="Check to agree to our terms and conditions"
+							checkedTitle="I agree to our terms and conditions"
+							checked={props.values.check}
+							onPress={() => props.setFieldValue('check', !props.values.check)}
+						/>
+					</View>
+				)}
+			</Formik>
+		</KeyboardAvoidingView>
 	)
 }
 
 const styles = StyleSheet.create({
-	spaceS: {
+	error: {
+		marginBottom: 13,
+		marginLeft: 8,
+		fontSize: 14,
+		color: 'red',
+		fontWeight: 'bold',
+	},
+	input: {
+		height: 50,
+		paddingHorizontal: 8,
+		width: '100%',
+		borderColor: '#ededed',
+		borderWidth: 1,
+		borderRadius: 5,
+		backgroundColor: '#fff',
 		marginBottom: 10,
 	},
-	spaceM: {
-		marginBottom: 20,
+	signupButton: {
+		backgroundColor: '#126FEE',
+		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: 5,
+		marginBottom: 10,
 	},
-	spaceL: {
-		marginBottom: 40,
+	signupButtonText: {
+		color: 'white',
+		padding: 20,
+		fontSize: 20,
+	},
+	checkboxContainer: {
+		backgroundColor: 'white',
+		margin: 0,
+		paddingVertical: 0,
+		paddingRight: 10,
+		marginLeft: 0,
+		marginRight: 0,
+	},
+	checkboxWrapper: {
+		margin: 0,
+		height: 50,
 	},
 })

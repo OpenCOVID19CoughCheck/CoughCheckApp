@@ -1,45 +1,37 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import { Button } from 'react-native-paper'
-import { render } from 'react-dom'
+import { FontAwesome } from '@expo/vector-icons'
 
 export const ThirdPartyAuth = (props) => {
 	return (
-		<View styles={styles.thirdPartyAuth}>
-			<Button
-				icon="google"
-				style={styles.spaceM}
-				mode="contained"
-				// onPress={() => {
-				// 	dispatch({
-				// 		type: 'SIGN_IN',
-				// 		token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
-				// 	})
-				// }}
-			>
-				Continue with Facebook
-			</Button>
-			<Button
-				icon="facebook"
-				style={styles.spaceM}
-				mode="contained"
-				// onPress={() => {
-				// 	dispatch({
-				// 		type: 'SIGN_IN',
-				// 		token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
-				// 	})
-				// }}
-			>
-				Continue with Google
-			</Button>
+		<View>
+			<View style={styles.spaceS}>
+				<FontAwesome.Button
+					name="facebook"
+					backgroundColor="#126FEE"
+					// onPress={this.loginWithFacebook}
+					iconStyle={{ marginLeft: 6, marginRight: 18 }}
+					style={{ height: 50 }}
+				>
+					Login with Facebook
+				</FontAwesome.Button>
+			</View>
+			<View style={styles.spaceS}>
+				<FontAwesome.Button
+					name="google"
+					backgroundColor="#126FEE"
+					iconStyle={{ marginLeft: 3, marginRight: 15 }}
+					style={{ height: 50 }}
+					// onPress={this.loginWithGoogle}
+				>
+					Login with Google
+				</FontAwesome.Button>
+			</View>
 		</View>
 	)
 }
 
 const styles = StyleSheet.create({
-	thirdPartyAuth: {
-		height: 10,
-	},
 	spaceS: {
 		marginBottom: 10,
 	},
