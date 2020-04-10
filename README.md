@@ -3,11 +3,15 @@
 		width="300"
 		alt="CoughCheck"
 		src="assets/images/logo.svg?sanitize=true">
+ 	<br>
+ 	CoughCheck
 </h1>
 
 <h3 align="center">
 	AI Audio App to compare cough of COVID-19 infected versus Normal cough
 </h3>
+
+<h4 align="center">Be sure to :star: us so you can keep up to date on any daily progress!</h4>
 
 <p align="center">
 	<strong>
@@ -22,7 +26,7 @@
 
 <div align="center">
 
-[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies) 
+[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies)  <a href="https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/commits/master"><img src="https://img.shields.io/github/last-commit/OpenCOVID19CoughCheck/CoughCheckApp.svg?style=plasticr"/></a>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
@@ -74,7 +78,6 @@ Pivot the application to return predictions based on audio files uploaded once c
 # Contributing
 
 This project exists thanks to all the people who contribute. Check our general [on-boarding guide](./GETTING_INVOLVED.md).
-:star: Star us on GitHub — it helps!
 
 ## Developers
 
