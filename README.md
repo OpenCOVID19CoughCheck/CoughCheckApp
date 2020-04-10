@@ -1,30 +1,44 @@
+<h1 align="center">
+	<img
+		width="300"
+		alt="CoughCheck"
+		src="assets/images/logo.svg?sanitize=true">
+</h1>
 
-[![CoughCheck App released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+<h3 align="center">
+	AI Audio App to compare cough of COVID-19 infected versus Normal cough.
+</h3>
+
+<p align="center">
+	<strong>
+		<a href="https://coughcheck.github.io/">Website</a>
+		•
+		<a href="https://trello.com/opencovid19aicoughdetectionteam">Trello</a>
+		•
+		<a href="http://open-covid19.slack.com/">Slack</a>
+	</strong>
+</p>
+
+
+<div align="center">
+
+[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies) [![Twitter][twitter-badge]][twitter-intent]
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<p align="center">
-  <img src="assets/images/logo.svg" width="350">
-</p>
+</div>
 
-# Goal
+This repository contains source code to build the Application CoughCheck, and general information about the project.
 
-The purpose of this Application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. The recorded coughs with user-provided and consented associated data will be encrypted on device to protect user privacy, and then will be uploaded to an external privacy-concerned repository to help in the detection of COVID-19 coughs by a machine-learning platform. The external repository should provide individual accounts for each user, encryption of the uploaded data, and offer a secure channel (for example OAuth2) as end-points for secure communication. All of the data sent through CoughCheck is owned by you. You own your voice and potential cough signatures. All the Application code is Open Source, you can view it, check the source code and validate our builds. We want to enforce to people the real privacy danger of recording their voices and coughs to any party without clear intentions and regulations.
+# Overview
+
+The purpose of this Application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. 
+
+The recorded coughs with user-provided and consented associated data will be encrypted on device to protect user privacy, and then will be uploaded to an external privacy-concerned repository to help in the detection of COVID-19 coughs by a machine-learning platform. The external repository should provide individual accounts for each user, encryption of the uploaded data, and offer a secure channel (for example OAuth2) as end-points for secure communication. All of the data sent through CoughCheck is owned by you. You own your voice and potential cough signatures. All the Application code is Open Source, you can view it, check the source code and validate our builds. We want to enforce to people the real privacy danger of recording their voices and coughs to any party without clear intentions and regulations.
 
 The Machine-Learning module will analyze the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
-
-# Project Links
-
-  - Join our [Slack channel](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
-  - Participate using our [Public Trello board](https://trello.com/opencovid19aicoughdetectionteam)
-  - Our project is kindly hosted and supported by [JOGL (Just One Giant Lab)](https://app.jogl.io/project/132)
-  
-# Usage
-
-WiP
 
 ## Roadmap
 
