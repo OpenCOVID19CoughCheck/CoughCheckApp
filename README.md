@@ -22,7 +22,7 @@
 
 <div align="center">
 
-[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies) [![Twitter][twitter-badge]][twitter-intent]
+[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies) 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
@@ -30,11 +30,22 @@
 
 </div>
 
-This repository contains source code to build the Application CoughCheck, and general information about the project.
+## Table of contents
+
+- [Overview](#overview)
+- [Roadmap](#roadmap)
+    - [Data Gathering](#data-gathering)
+    - [ML Processing](#ml-processing)
+	- [COVID-19 Presumptive Detection](#covid-19-presumptive-detection)
+- [Contributing](#contributing)
+    - [Developers](#developers)
+    - [Financial Contributors](#financial-contributors)
+- [Project Status](#project-status)
+- [License](#license)
 
 # Overview
 
-The purpose of this Application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. 
+The purpose of this Application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. This repository contains source code to build the Application CoughCheck, and general information about the project.
 
 - **Privacy aware.** Recorded coughs encrypted on device to protect user privacy.
 - **Secure endpoints.** Consented associated data uploaded to external privacy-concerned repository using OAuth2.
@@ -42,47 +53,39 @@ The purpose of this Application is to provide the global community with a non-in
 - **Respect the science.** Collect data first, do not overfit/underfit the machine-learning model to publish results faster.
 - **Explainable AI** Do not build black-box models, enforce debuggable models.
 - **Cross platform.** It doesn't matter what OS you use, it just works wherever Node.js runs.
-- **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
-- **Synchronized experience.** Always resume where you left off no matter what device.
+- **Responsive interface.** Works smoothly on every desktop, smartphone and tablet.
 
 The Machine-Learning module will analyze the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
-## Roadmap
+# Roadmap
 
-### Development of MVP
+## Data Gathering 
 
-The first step of this project will be to develop the Minimum Viable Product for this application and get it to market so that end-users can begin to upload data to.
+The first step of this project will be to release this application so that end-users can begin to upload data to.
 
-  - [Figma Prototype](https://www.figma.com/file/OTTJjNQSbzJ7d9qCyLOZ9h/OpenCOVID19?node-id=0%3A1)
-  - Add your own prototype...
-
-### Data Gathering & ML Processing
+## ML Processing
 
 The second step is to onboard as many users as feasible (both uninfected and infected individuals) and setup machine learning capabilities within the application, which processes audio clips uploaded to discern discrepancies between the coughs of an infected individuals and the coughs of an uninfected individual.
 
-### COVID-19 Detection Application
+## COVID-19 Presumptive Detection
 
 Pivot the application to return predictions based on audio files uploaded once confidence level in ML Processing is high enough.
 
-## Contributing
+# Contributing
 
-This project exists thanks to all the people who contribute. Check our general [on-boarding guide](./GETTING_INVOLVED.md)
+This project exists thanks to all the people who contribute. Check our general [on-boarding guide](./GETTING_INVOLVED.md).
+:star: Star us on GitHub — it helps!
 
-### Developers
+## Developers
 
   - If you prefer to immediately contribute with code feel free to check [our issues page](https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/issues) if you want to contribute. 
   - If you prefer [to check the contributing guide](./CONTRIBUTING.md)
   - If you have not time at all, you may still star this repository if this project can help you!
 
-### Financial collaborators
-
-Show your support
-
-<a href="https://opencollective.com/coughcheckapp/donate" target="_blank">
-  <img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=200 />
-</a> Become a financial contributor and help us sustain our community through OpenCollective
-
- <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a> You can also donate using Liberapay
+## Financial collaborators
+  
+  - <a href="https://opencollective.com/coughcheckapp/donate" target="_blank"><img src="https://opencollective.com/coughcheckapp/donate/button@2x.png?color=blue" width=200 /></a> Become a financial contributor and help us sustain our community through OpenCollective
+  - <a href="https://liberapay.com/OpenCOVID19CoughCheck/" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a> You can also donate using Liberapay
 
 # Project Status
 
@@ -90,11 +93,11 @@ CoughCheckApp is being actively developed. We’re currently working on partners
 
 Visit the to the ToDo list to contribute or see the features in progress.
 
-## License
+# License
 
 We are currently using the Open Source [MIT License](./LICENSE.md)
 
-## TODOs
+# TODOs
 
 - [x] Adding `prettier` & `editorconfig` so we all have a consistent code (also husky so we are sure not breaking existing style rules with new commits)
 - [x] Adding `native-base` to implement the login.
