@@ -6,7 +6,7 @@
 </h1>
 
 <h3 align="center">
-	AI Audio App to compare cough of COVID-19 infected versus Normal cough.
+	AI Audio App to compare cough of COVID-19 infected versus Normal cough
 </h3>
 
 <p align="center">
@@ -36,7 +36,14 @@ This repository contains source code to build the Application CoughCheck, and ge
 
 The purpose of this Application is to provide the global community with a non-invasive application for personal pre-screening, anywhere and anytime, through which the user can record and upload a clip of themselves or a loved-one coughing. 
 
-The recorded coughs with user-provided and consented associated data will be encrypted on device to protect user privacy, and then will be uploaded to an external privacy-concerned repository to help in the detection of COVID-19 coughs by a machine-learning platform. The external repository should provide individual accounts for each user, encryption of the uploaded data, and offer a secure channel (for example OAuth2) as end-points for secure communication. All of the data sent through CoughCheck is owned by you. You own your voice and potential cough signatures. All the Application code is Open Source, you can view it, check the source code and validate our builds. We want to enforce to people the real privacy danger of recording their voices and coughs to any party without clear intentions and regulations.
+- **Privacy aware.** Recorded coughs encrypted on device to protect user privacy.
+- **Secure endpoints.** Consented associated data uploaded to external privacy-concerned repository using OAuth2.
+- **Data protection.** All of the data sent through CoughCheck is owned by you, and you can remove it anytime.
+- **Respect the science.** Collect data first, do not overfit/underfit the machine-learning model to publish results faster.
+- **Explainable AI** Do not build black-box models, enforce debuggable models.
+- **Cross platform.** It doesn't matter what OS you use, it just works wherever Node.js runs.
+- **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
+- **Synchronized experience.** Always resume where you left off no matter what device.
 
 The Machine-Learning module will analyze the cough and determines the likelihood that the user is infected with COVID-19 as well as the other potentially crucial meta information such as the potential severity of the infection, likelihood of accompanying health concerns, etc.
 
