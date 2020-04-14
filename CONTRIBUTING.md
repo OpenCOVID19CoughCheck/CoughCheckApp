@@ -35,7 +35,7 @@ If you have a question about this project, how to use it, or just need clarifica
 
 * Open an Issue at https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/issues
 * Provide as much context as you can about what you're running into.
-* Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
+* Provide project and platform versions (OS, yarn, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
 
 Once it's filed:
 
@@ -83,16 +83,8 @@ If this seems like a lot or you aren't able to do all this setup, you might also
 
 If you want to go the usual route and run the project locally, though:
 
-* [Install Node.js](https://nodejs.org/en/download/)
 * [Fork the project](https://guides.github.com/activities/forking/#fork)
 * [Setup environment](./DEVELOPING.md)
-
-Then in your terminal:
-* `cd path/to/your/clone`
-* `npm install`
-* `npm test`
-
-And you should be ready to go!
 
 ## Contribute Documentation
 
