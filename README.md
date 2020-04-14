@@ -45,6 +45,7 @@
     - [Developers](#developers)
     - [Financial Contributors](#financial-contributors)
 - [Project Status](#project-status)
+- [Collaborators](#collaborators)
 - [License](#license)
 
 # Overview
@@ -95,6 +96,15 @@ This project exists thanks to all the people who contribute. Check our general [
 CoughCheckApp is being actively developed. We’re currently working on partnerships with other open source projects and support from companies and Universities around the globe.
 
 Visit the to the ToDo list to contribute or see the features in progress.
+
+# Collaborators
+
+The following Organizations and Companies are kindly helping us to develop a solution:
+
+  - [JOGL](https://app.jogl.io/)
+  - [OpenHumans](https://www.openhumans.org/)
+	- [OpenCollective](https://opencollective.com/)
+	- [Lokalise](https://lokalise.com/)
 
 # License
 
