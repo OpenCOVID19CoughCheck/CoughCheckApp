@@ -103,8 +103,8 @@ The following Organizations and Companies are kindly helping us to develop a sol
 
   - [JOGL](https://app.jogl.io/)
   - [OpenHumans](https://www.openhumans.org/)
-	- [OpenCollective](https://opencollective.com/)
-	- [Lokalise](https://lokalise.com/)
+  - [OpenCollective](https://opencollective.com/)
+  - [Lokalise](https://lokalise.com/)
 
 # License
 
