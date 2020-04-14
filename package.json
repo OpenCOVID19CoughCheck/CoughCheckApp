@@ -75,7 +75,8 @@
 		"pretty-quick": "^2.0.1",
 		"react-devtools": "^3",
 		"typescript": "^3.8.3",
-		"weallcontribute": "^1.0.9"
+		"weallcontribute": "^1.0.9",
+		"webpack-merge": "^4.2.2"
 	},
 	"private": true,
 	"husky": {

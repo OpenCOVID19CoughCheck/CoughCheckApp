@@ -7,7 +7,8 @@ import { Root } from 'native-base'
 import i18n from 'i18n-js'
 // import AppNavigator from 'src/navigation/AppNavigator'
 // import ContextProvider from 'src/globalState/ContextProvider'
-import HomeScreen from 'src/builderX/HomeScreen/src/screens/HomeScreen'
+import LoginScreen from 'src/LoginScreen/src/screens/LoginScreen'
+// import HomeScreen from 'src/builderX/HomeScreen/src/screens/HomeScreen'
 
 const fonts = {
 	'SFProDisplay-Bold': require('./assets/fonts/SFProDisplay-Bold.otf'),
@@ -30,7 +31,7 @@ function App() {
 	} else {
 		return (
 			<Root>
-				<HomeScreen />
+				<LoginScreen />
 			</Root>
 		)
 	}
