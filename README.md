@@ -26,7 +26,7 @@
 
 <div align="center">
 
-[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies)  <a href="https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/commits/master"><img src="https://img.shields.io/github/last-commit/OpenCOVID19CoughCheck/CoughCheckApp.svg?style=plasticr"/></a> [![GitHub version](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp.svg)](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp) [![Join our Slack!](https://img.shields.io/static/v1?message=join%20chat&color=9cf&logo=slack&label=slack)](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
+[![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies)  <a href="https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/commits/master"><a href="https://opencollective.com/CoughCheckApp" alt="Financial Contributors on Open Collective"><img src="https://opencollective.com/CoughCheckApp/all/badge.svg?label=financial+contributors" /></a> <img src="https://img.shields.io/github/last-commit/OpenCOVID19CoughCheck/CoughCheckApp.svg?style=plasticr"/></a> [![GitHub version](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp.svg)](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp) [![Join our Slack!](https://img.shields.io/static/v1?message=join%20chat&color=9cf&logo=slack&label=slack)](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
@@ -105,6 +105,36 @@ The following Organizations and Companies are kindly helping us to develop a sol
   - [OpenHumans](https://www.openhumans.org/)
   - [OpenCollective](https://opencollective.com/)
   - [Lokalise](https://lokalise.com/)
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/graphs/contributors"><img src="https://opencollective.com/CoughCheckApp/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/CoughCheckApp/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/CoughCheckApp"><img src="https://opencollective.com/CoughCheckApp/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/CoughCheckApp/contribute)]
+
+<a href="https://opencollective.com/CoughCheckApp/organization/0/website"><img src="https://opencollective.com/CoughCheckApp/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/1/website"><img src="https://opencollective.com/CoughCheckApp/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/2/website"><img src="https://opencollective.com/CoughCheckApp/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/3/website"><img src="https://opencollective.com/CoughCheckApp/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/4/website"><img src="https://opencollective.com/CoughCheckApp/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/5/website"><img src="https://opencollective.com/CoughCheckApp/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/6/website"><img src="https://opencollective.com/CoughCheckApp/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/7/website"><img src="https://opencollective.com/CoughCheckApp/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/8/website"><img src="https://opencollective.com/CoughCheckApp/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/CoughCheckApp/organization/9/website"><img src="https://opencollective.com/CoughCheckApp/organization/9/avatar.svg"></a>
 
 # License
 
