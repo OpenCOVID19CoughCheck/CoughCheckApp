@@ -1,6 +1,5 @@
-import React from 'react'
+// import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-
 import { KeyboardAvoidingView } from 'react-native'
 import PropTypes from 'prop-types'
 import styled from 'styled-components/native'
@@ -49,3 +48,18 @@ export const TextSignInStyled = styled.Text`
 	color: #ccc;
 	text-align: center;
 `
+
+export const StyledText = styled.Text`
+	text-align: center;
+	color: #777;
+	font-size: 18px;
+	font-family: 'SFProDisplay-Regular';
+	letter-spacing: 0.36px;
+`
+
+// export const AppTextSmall = styled.Text`
+// 	text-align: center;
+// 	color: #777;
+// 	font-size: 14px;
+// 	font-family: 'SFProDisplay-Regular';
+// `
