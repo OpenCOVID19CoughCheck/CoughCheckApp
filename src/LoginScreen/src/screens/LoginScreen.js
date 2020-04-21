@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import { AppText } from '../../../global-components/AppText/AppText.js'
-import { SignupForm } from '../../../global-components/SignupForm/SignupForm.js'
-import { ThirdPartyAuth } from '../../../global-components/ThirdPartyAuth/ThirdPartyAuth.js'
-import { Logo } from '../../../global-components/Logo/Logo.js'
+import { SignupForm } from './signupForm/SignupForm.js'
+import { ThirdPartyAuth } from './thirdPartyAuth/ThirdPartyAuth.js'
+import { Logo } from '../../../components/logo/Logo.js'
+import { StyledText } from 'src/components/styledComponents'
 
 function LoginScreen(props) {
 	// const [email, setEmail] = React.useState('')
@@ -18,12 +18,12 @@ function LoginScreen(props) {
 			<SignupForm style={styles.SignupForm} />
 
 			<View>
-				<AppText>OR</AppText>
+				<StyledText>OR</StyledText>
 			</View>
 			<ThirdPartyAuth style={styles.ThirdPartyAuth} />
 
 			<View>
-				<AppText>Have an account? Sign In</AppText>
+				<StyledText>Have an account? Sign In</StyledText>
 			</View>
 		</View>
 	)
@@ -48,15 +48,6 @@ const styles = StyleSheet.create({
 	},
 	ThirdPartyAuth: {
 		flex: -1,
-	},
-	textInput: {
-		// height: 40,
-		// borderColor: 'gray',
-		// borderWidth: 1,
-		// borderRadius: 5,
-		// padding: 10,
-		// backgroundColor: '#ddd',
-		// color: '#555',
 	},
 	spaceS: {
 		marginBottom: 10,
