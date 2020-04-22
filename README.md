@@ -1,7 +1,4 @@
 <h1 align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 	<img
 		width="300"
 		alt="CoughCheck"
@@ -35,9 +32,7 @@
 >>>>>>> Add all-contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 </div>
@@ -47,7 +42,8 @@
 - [Overview](#overview)
 - [Roadmap](#roadmap)
   - [Data Gathering](#data-gathering)
-  - [ML Processing](#ml-processing) - [COVID-19 Presumptive Detection](#covid-19-presumptive-detection)
+  - [ML Processing](#ml-processing) 
+	- [COVID-19 Presumptive Detection](#covid-19-presumptive-detection)
 - [Contributing](#contributing)
   - [Developers](#developers)
   - [Financial Contributors](#financial-contributors)
