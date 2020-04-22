@@ -3544,6 +3544,14 @@ expo-asset@~8.1.3:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-auth-session@~1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/expo-auth-session/-/expo-auth-session-1.0.1.tgz#f1d97e750731e8e717eb18341ebb209b113716b7"
+  integrity sha512-AX8SmTfpuifKpACgqmOQD+6p/aoXqSpezkxF5XTYg6d8pFPBOqkile6gBVhb6SMtb1bh5QpLwaZiy/DdXwYgOQ==
+  dependencies:
+    expo-constants "~9.0.0"
+    expo-web-browser "~8.1.1"
+
 expo-av@~8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.1.0.tgz#376e2a821168cd83e997c6dd84350fab6b293f10"
@@ -3618,6 +3626,11 @@ expo-web-browser@~8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-8.1.0.tgz#1b4ca25e4dd600fac9ad16e32d81be47778c2667"
   integrity sha512-Js2LIGut0NRKF+8BdQ2EOwGF2B2VYlnHgERxRtR+vHw7NOa7ZSl2GKFlAmf8QvAHqskk1OD0tujtoATv9XcELg==
+
+expo-web-browser@~8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-8.1.1.tgz#93a3d4af834e7bbd1afd54f0cc588016d592c5ae"
+  integrity sha512-htiXVLo0mb0t8F2vFL3+QnmD97B9U0Ek9cp2BBKSCLeHaVry6RUMewT9HLLcBOJhz2Zdjwk7JmTJh6amF1h80Q==
 
 expo@^37.0.0:
   version "37.0.4"

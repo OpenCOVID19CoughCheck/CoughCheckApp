@@ -13,9 +13,12 @@ import {
 	KeyboardAvoidingView,
 } from 'react-native'
 import { CheckBox } from 'react-native-elements'
+import { useAuthContext } from '../../../../globalState/AuthContext'
 
 export const SignupForm = (props) => {
 	const passwordInput = React.useRef(null)
+	const { dispatch } = useAuthContext()
+
 	return (
 		<KeyboardAvoidingView behavior={'position'}>
 			<Formik
@@ -63,7 +66,13 @@ export const SignupForm = (props) => {
 							<Text style={styles.error}>{props.errors.password}</Text>
 						) : null}
 						<TouchableOpacity
-							onPress={props.handleSubmit}
+							// onPress={props.handleSubmit}           This is the syntax from Formik. Temporarily replaced with a function to Bypass Auth.
+							onPress={() => {
+								dispatch({
+									type: 'SIGN_IN',
+									token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
+								})
+							}}
 							accessibilityLabel="Submit button"
 						>
 							<View style={styles.signupButton}>

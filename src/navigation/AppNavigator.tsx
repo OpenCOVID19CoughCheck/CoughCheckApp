@@ -6,7 +6,7 @@ import QuestionnaireScreen from 'src/questionnaire/QuestionnaireScreen'
 import CoughRecorderScreen from 'src/cough-recorder/CoughRecorderScreen'
 import { useAuthContext } from 'src/globalState/AuthContext'
 import SplashScreen from 'src/components/SplashScreen'
-import SignInScreen from 'src/navigation/SignInScreen'
+import LoginScreen from 'src/LoginScreen/src/screens/LoginScreen'
 import { AsyncStorage } from 'react-native'
 
 const Stack = createStackNavigator()
@@ -44,10 +44,10 @@ const AppNavigator = () => {
 				) : state.userToken == null ? (
 					// No token found, user isn't signed in
 					<Stack.Screen
-						name="SignIn"
-						component={SignInScreen}
+						name="Log In"
+						component={LoginScreen}
 						options={{
-							title: 'Sign in',
+							title: 'Log in',
 							// When logging out, a pop animation feels intuitive
 							animationTypeForReplace: state.isSignout ? 'pop' : 'push',
 						}}
@@ -55,9 +55,9 @@ const AppNavigator = () => {
 				) : (
 					// User is signed in
 					<>
+						<Stack.Screen name="CoughRecorder" component={CoughRecorderScreen} />
 						<Stack.Screen name="Home" component={HomeScreen} />
 						<Stack.Screen name="Questionnaire" component={QuestionnaireScreen} />
-						<Stack.Screen name="CoughRecorder" component={CoughRecorderScreen} />
 					</>
 				)}
 			</Stack.Navigator>
