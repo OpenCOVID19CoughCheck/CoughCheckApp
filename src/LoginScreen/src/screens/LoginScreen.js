@@ -12,8 +12,9 @@ function LoginScreen(props) {
 	// Might need to raise the state up here?
 
 	return (
-		<View style={styles.root}>
+		<View style={styles.wrapper}>
 			<Logo />
+
 			{/* How can I pass CSS into one of these components? */}
 			<SignupForm style={styles.SignupForm} />
 
@@ -30,18 +31,16 @@ function LoginScreen(props) {
 }
 
 const styles = StyleSheet.create({
-	root: {
+	wrapper: {
 		paddingTop: 100,
 		paddingBottom: 50,
 		backgroundColor: 'rgba(255,255,255,1)',
 		flex: 1,
 		alignItems: 'stretch',
 		justifyContent: 'space-around',
-		width: '80%',
-		marginLeft: '10%',
-	},
-	Logo: {
-		marginTop: 100,
+		width: '100%',
+		paddingLeft: '10%',
+		paddingRight: '10%',
 	},
 	SignupForm: {
 		flex: 10,
