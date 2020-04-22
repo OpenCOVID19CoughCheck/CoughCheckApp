@@ -1,7 +1,4 @@
 <h1 align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 	<img
 		width="300"
 		alt="CoughCheck"
@@ -31,9 +28,7 @@
 [![MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![dependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp) [![devDependencies Status](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp/dev-status.svg)](https://david-dm.org/OpenCOVID19CoughCheck/CoughCheckApp#info=devDependencies) <a href="https://github.com/OpenCOVID19CoughCheck/CoughCheckApp/commits/master"><img src="https://img.shields.io/github/last-commit/OpenCOVID19CoughCheck/CoughCheckApp.svg?style=plasticr"/></a> [![GitHub version](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp.svg)](https://badge.fury.io/gh/OpenCOVID19CoughCheck%2FCoughCheckApp) [![Join our Slack!](https://img.shields.io/static/v1?message=join%20chat&color=9cf&logo=slack&label=slack)](https://join.slack.com/t/open-covid19/shared_invite/zt-cbji2hte-8jdoHpJDKg80ZliPVCIjqw)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 </div>
@@ -43,7 +38,8 @@
 - [Overview](#overview)
 - [Roadmap](#roadmap)
   - [Data Gathering](#data-gathering)
-  - [ML Processing](#ml-processing) - [COVID-19 Presumptive Detection](#covid-19-presumptive-detection)
+  - [ML Processing](#ml-processing) 
+	- [COVID-19 Presumptive Detection](#covid-19-presumptive-detection)
 - [Contributing](#contributing)
   - [Developers](#developers)
   - [Financial Contributors](#financial-contributors)
