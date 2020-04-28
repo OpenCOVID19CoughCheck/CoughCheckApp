@@ -56,10 +56,33 @@ export const StyledText = styled.Text`
 	font-family: 'SFProDisplay-Regular';
 	letter-spacing: 0.36px;
 `
+export const StyledTextBold = styled.Text`
+	text-align: center;
+	color: #777;
+	font-size: 18px;
+	font-family: 'SFProDisplay-Bold';
+	letter-spacing: 0.36px;
+`
 
-// export const AppTextSmall = styled.Text`
-// 	text-align: center;
-// 	color: #777;
-// 	font-size: 14px;
-// 	font-family: 'SFProDisplay-Regular';
-// `
+export const StyledTextLarge = styled.Text`
+	text-align: center;
+	color: #777;
+	font-size: 30px;
+	font-family: 'SFProDisplay-Bold';
+	marginbottom: 10px;
+`
+
+export const StyledShareButton = styled.TouchableOpacity`
+	backgroundcolor: #126fee;
+	borderradius: 5px;
+	height: 50px;
+	paddingtop: 13px;
+`
+
+export const StyledShareButtonText = styled.Text`
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'SFProDisplay-Regular';
+	letter-spacing: 0.36px;
+`
