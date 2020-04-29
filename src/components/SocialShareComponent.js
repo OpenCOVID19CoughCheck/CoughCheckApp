@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import ProgressBar from 'src/components/ProgressBar'
-import SocialShareButton from 'src/components/SocialShareButton'
+import ButtonSocialShare from 'src/components/ButtonSocialShare'
 import {
 	StyledText,
 	StyledTextLarge,
@@ -26,7 +26,7 @@ export default function SocialShareComponent() {
 					Help us reach {numberWithCommas('1000000' - appShares)} more
 				</StyledTextBold>
 			</View>
-			<SocialShareButton style={styles.shareButton}></SocialShareButton>
+			<ButtonSocialShare style={styles.shareButton}></ButtonSocialShare>
 		</View>
 	)
 }

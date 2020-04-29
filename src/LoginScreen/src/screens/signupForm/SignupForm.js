@@ -14,6 +14,7 @@ import {
 } from 'react-native'
 import { CheckBox } from 'react-native-elements'
 import { useAuthContext } from '../../../../globalState/AuthContext'
+import ButtonCTALarge from 'src/components/ButtonCTALarge'
 
 export const SignupForm = (props) => {
 	const passwordInput = React.useRef(null)
@@ -65,20 +66,17 @@ export const SignupForm = (props) => {
 						{props.touched.password && props.errors.password ? (
 							<Text style={styles.error}>{props.errors.password}</Text>
 						) : null}
-						<TouchableOpacity
-							// onPress={props.handleSubmit}           This is the syntax from Formik. Temporarily replaced with a function to Bypass Auth.
+						<ButtonCTALarge
+							text="Sign Up"
 							onPress={() => {
+								// Should we handle some kind of props.handleSubmit here when Auth is reactivated?
 								dispatch({
 									type: 'SIGN_IN',
 									token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
 								})
 							}}
 							accessibilityLabel="Submit button"
-						>
-							<View style={styles.signupButton}>
-								<Text style={styles.signupButtonText}>Sign Up</Text>
-							</View>
-						</TouchableOpacity>
+						/>
 
 						<CheckBox
 							containerStyle={styles.checkboxContainer}
@@ -115,18 +113,6 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 		backgroundColor: '#fff',
 		marginBottom: 10,
-	},
-	signupButton: {
-		backgroundColor: '#126FEE',
-		alignItems: 'center',
-		justifyContent: 'center',
-		borderRadius: 5,
-		marginBottom: 10,
-	},
-	signupButtonText: {
-		color: 'white',
-		padding: 20,
-		fontSize: 20,
 	},
 	checkboxContainer: {
 		backgroundColor: 'white',

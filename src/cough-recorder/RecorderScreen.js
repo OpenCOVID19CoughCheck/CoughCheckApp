@@ -7,6 +7,7 @@ import {
 	StyledTextBold,
 } from 'src/components/styledComponents'
 import SocialShareComponent from 'src/components/SocialShareComponent'
+import ButtonCTALarge from 'src/components/ButtonCTALarge'
 import {
 	RecordButton,
 	StopButton,
@@ -39,11 +40,12 @@ export default function RecorderScreen() {
 					<StyledText>
 						Check the sound has recorded correctly, and then press Submit
 					</StyledText>
-					<TouchableOpacity onPress={() => {}}>
-						<View style={styles.submitButton}>
-							<Text style={styles.submitButtonText}>Submit</Text>
-						</View>
-					</TouchableOpacity>
+					<ButtonCTALarge
+						text="Submit"
+						onPress={() => {
+							console.log('onPress TODO')
+						}}
+					/>
 				</View>
 			</View>
 		)
@@ -98,19 +100,8 @@ const styles = StyleSheet.create({
 		marginBottom: 30,
 	},
 	recorderWrapper: {
+		// For layout testing only:
 		// backgroundColor: '#eee',
-	},
-	submitButton: {
-		backgroundColor: '#126FEE',
-		alignItems: 'center',
-		justifyContent: 'center',
-		borderRadius: 5,
-		marginBottom: 10,
-	},
-	submitButtonText: {
-		color: 'white',
-		padding: 20,
-		fontSize: 20,
 	},
 	bottomwrapper: {
 		height: '40%',
