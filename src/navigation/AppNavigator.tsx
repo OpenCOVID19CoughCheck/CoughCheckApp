@@ -7,7 +7,7 @@ import Recorder from 'src/cough-recorder/RecorderScreen'
 import HomeScreen from 'src/builderX/HomeScreen/src/screens/HomeScreen.js'
 import { useAuthContext } from 'src/globalState/AuthContext'
 import SplashScreen from 'src/components/SplashScreen'
-import LoginScreen from 'src/LoginScreen/src/screens/LoginScreen'
+import LoginScreen from 'src/LoginScreen/LoginScreen'
 import { AsyncStorage } from 'react-native'
 
 const Stack = createStackNavigator()

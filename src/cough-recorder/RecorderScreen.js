@@ -72,7 +72,9 @@ export default function RecorderScreen() {
 							<StyledTextLarge>Recording...</StyledTextLarge>
 						</View>
 					)}
-					<View style={styles.bottomwrapper}>{/* <SocialShareComponent/> */}</View>
+					<View style={styles.bottomWrapper}>
+						<SocialShareComponent />
+					</View>
 				</>
 			) : (
 				<View>
@@ -85,8 +87,8 @@ export default function RecorderScreen() {
 
 const styles = StyleSheet.create({
 	wrapper: {
-		// paddingTop: 50,
-		paddingBottom: 50,
+		paddingTop: 50,
+		paddingBottom: 100,
 		backgroundColor: 'rgba(255,255,255,1)',
 		flex: 1,
 		alignItems: 'stretch',
@@ -102,8 +104,9 @@ const styles = StyleSheet.create({
 	recorderWrapper: {
 		// For layout testing only:
 		// backgroundColor: '#eee',
+		marginBottom: '10%',
 	},
-	bottomwrapper: {
+	bottomWrapper: {
 		height: '40%',
 		justifyContent: 'space-evenly',
 	},

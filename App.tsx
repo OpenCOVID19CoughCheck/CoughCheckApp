@@ -7,8 +7,6 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import i18n from 'i18n-js'
 import AppNavigator from 'src/navigation/AppNavigator'
 import ContextProvider from 'src/globalState/ContextProvider'
-import LoginScreen from 'src/LoginScreen/src/screens/LoginScreen'
-// import HomeScreen from 'src/home/HomeScreen'
 
 const fonts = {
 	'SFProDisplay-Bold': require('./assets/fonts/SFProDisplay-Bold.otf'),

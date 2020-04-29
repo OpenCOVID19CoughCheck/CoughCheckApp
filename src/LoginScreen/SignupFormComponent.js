@@ -6,22 +6,20 @@ import {
 	Alert,
 	Text,
 	TextInput,
-	TouchableOpacity,
-	Button,
 	StyleSheet,
 	View,
 	KeyboardAvoidingView,
 } from 'react-native'
 import { CheckBox } from 'react-native-elements'
-import { useAuthContext } from '../../../../globalState/AuthContext'
+import { useAuthContext } from '../globalState/AuthContext'
 import ButtonCTALarge from 'src/components/ButtonCTALarge'
 
-export const SignupForm = (props) => {
+export default function SignupFormComponent(props) {
 	const passwordInput = React.useRef(null)
 	const { dispatch } = useAuthContext()
 
 	return (
-		<KeyboardAvoidingView behavior={'position'}>
+		<KeyboardAvoidingView behavior={'position'} style={styles.signupFormWrapper}>
 			<Formik
 				initialValues={{ email: '', password: '', check: false }}
 				validationSchema={Yup.object({
@@ -97,6 +95,10 @@ export const SignupForm = (props) => {
 }
 
 const styles = StyleSheet.create({
+	signupFormWrapper: {
+		flexGrow: 10,
+		justifyContent: 'space-evenly',
+	},
 	error: {
 		marginBottom: 13,
 		marginLeft: 8,

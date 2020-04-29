@@ -74,9 +74,9 @@ export const StyledTextLarge = styled.Text`
 
 export const StyledShareButton = styled.TouchableOpacity`
 	background-color: #126fee;
-	borderradius: 5px;
+	border-radius: 5px;
 	height: 50px;
-	padding-top: 13px;
+	padding-top: 8px;
 `
 
 export const StyledShareButtonText = styled.Text`
