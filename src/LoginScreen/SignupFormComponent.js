@@ -13,6 +13,7 @@ import {
 import { CheckBox } from 'react-native-elements'
 import { useAuthContext } from '../globalState/AuthContext'
 import ButtonCTALarge from 'src/components/ButtonCTALarge'
+import { StyledText } from 'src/components/styledComponents'
 
 export default function SignupFormComponent(props) {
 	const passwordInput = React.useRef(null)
@@ -90,14 +91,18 @@ export default function SignupFormComponent(props) {
 					</View>
 				)}
 			</Formik>
+			<View style={styles.textWrapper}>
+				<StyledText>Have an account? Sign In</StyledText>
+			</View>
 		</KeyboardAvoidingView>
 	)
 }
 
 const styles = StyleSheet.create({
 	signupFormWrapper: {
-		flexGrow: 10,
-		justifyContent: 'space-evenly',
+		flexGrow: 1,
+		flexShrink: 1,
+		justifyContent: 'flex-start',
 	},
 	error: {
 		marginBottom: 13,
@@ -123,6 +128,7 @@ const styles = StyleSheet.create({
 		paddingRight: 10,
 		marginLeft: 0,
 		marginRight: 0,
+		marginBottom: 10,
 	},
 	checkboxWrapper: {
 		margin: 0,

@@ -15,13 +15,11 @@ export default function SocialShareComponent() {
 	}
 
 	return (
-		<View style={styles.socialShareContainer}>
-			<View>
+		<View style={styles.socialShareWrapper}>
+			<View style={styles.progressTextWrapper}>
 				<StyledTextLarge>{addCommasToNumber(appShares)}</StyledTextLarge>
 				<StyledText>People have contributed so far</StyledText>
-			</View>
-			<ProgressBar progress={0.4} />
-			<View style={styles.helpReachWrapper}>
+				<ProgressBar progress={0.4} />
 				<StyledTextBold>
 					Help us reach {addCommasToNumber('1000000' - appShares)} more
 				</StyledTextBold>
@@ -32,10 +30,10 @@ export default function SocialShareComponent() {
 }
 
 const styles = StyleSheet.create({
-	socialShareContainer: {
-		marginTop: 50,
+	socialShareWrapper: {
+		flexGrow: 1,
 	},
-	helpReachWrapper: {
-		marginBottom: 60,
+	progressTextWrapper: {
+		marginBottom: 40,
 	},
 })

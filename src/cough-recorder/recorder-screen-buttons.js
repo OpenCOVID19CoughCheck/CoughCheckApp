@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
 		shadowRadius: 10,
 		justifyContent: 'center',
 		alignItems: 'center',
+		marginBottom: 30,
 	},
 	playButton: {
 		marginLeft: 10,

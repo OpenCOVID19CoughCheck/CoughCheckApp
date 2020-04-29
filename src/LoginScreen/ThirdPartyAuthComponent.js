@@ -5,7 +5,7 @@ import { FontAwesome } from '@expo/vector-icons'
 export default function ThirdPartyAuth(props) {
 	return (
 		<View style={styles.thirdPartyAuthWrapper}>
-			<View style={styles.thirdPartyAuthbuttonWrapper}>
+			<View style={styles.thirdPartyAuthButton}>
 				<FontAwesome.Button
 					name="facebook"
 					backgroundColor="#126FEE"
@@ -16,7 +16,7 @@ export default function ThirdPartyAuth(props) {
 					Login with Facebook
 				</FontAwesome.Button>
 			</View>
-			<View style={styles.thirdPartyAuthbuttonWrapper}>
+			<View style={styles.thirdPartyAuthButton}>
 				<FontAwesome.Button
 					name="google"
 					backgroundColor="#126FEE"
@@ -34,8 +34,9 @@ export default function ThirdPartyAuth(props) {
 const styles = StyleSheet.create({
 	thirdPartyAuthWrapper: {
 		flexGrow: 1,
+		justifyContent: 'flex-start',
 	},
-	thirdPartyAuthbuttonWrapper: {
+	thirdPartyAuthButton: {
 		marginBottom: 10,
 	},
 })

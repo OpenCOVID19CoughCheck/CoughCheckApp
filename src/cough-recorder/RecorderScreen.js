@@ -1,6 +1,6 @@
 import React from 'react'
 import useAudioRecorder from 'src/cough-recorder/useAudioRecorder'
-import { View, StyleSheet, TouchableOpacity, Text } from 'react-native'
+import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import {
 	StyledText,
 	StyledTextLarge,
@@ -12,7 +12,7 @@ import {
 	RecordButton,
 	StopButton,
 	PlayButton,
-} from 'src/cough-recorder/RecorderScreenButtons'
+} from 'src/cough-recorder/recorder-screen-buttons'
 
 export default function RecorderScreen() {
 	const {
@@ -27,18 +27,13 @@ export default function RecorderScreen() {
 	if (recordedSound) {
 		return (
 			<View style={styles.wrapper}>
-				<TouchableOpacity onPress={() => {}}>
-					<StyledTextBold style={styles.topwrapper}>Re-record</StyledTextBold>
-				</TouchableOpacity>
-				<View style={styles.recorderWrapper}>
-					<View style={styles.buttonWrapper}>
-						<PlayButton onPress={handlePlaySound} />
-					</View>
+				<View style={styles.middleRecorderWrapper}>
+					<PlayButton onPress={handlePlaySound} />
 					<StyledTextLarge>Cough recorded!</StyledTextLarge>
 				</View>
-				<View style={styles.bottomwrapper}>
-					<StyledText>
-						Check the sound has recorded correctly, and then press Submit
+				<View style={styles.submitWrapper}>
+					<StyledText style={{ marginBottom: 50 }}>
+						Check the sound has recorded well, and then press Submit
 					</StyledText>
 					<ButtonCTALarge
 						text="Submit"
@@ -46,6 +41,9 @@ export default function RecorderScreen() {
 							console.log('onPress TODO')
 						}}
 					/>
+					<TouchableOpacity onPress={() => {}}>
+						<StyledTextBold>Re-record</StyledTextBold>
+					</TouchableOpacity>
 				</View>
 			</View>
 		)
@@ -58,23 +56,17 @@ export default function RecorderScreen() {
 				<>
 					{/* Test if we are Recording yet */}
 					{!isRecording ? (
-						<View style={styles.recorderWrapper}>
-							<View style={styles.buttonWrapper}>
-								<RecordButton onPress={handleStartRecording} />
-							</View>
+						<View style={styles.middleRecorderWrapper}>
+							<RecordButton onPress={handleStartRecording} />
 							<StyledTextLarge>Tap to record</StyledTextLarge>
 						</View>
 					) : (
-						<View style={styles.recorderWrapper}>
-							<View style={styles.buttonWrapper}>
-								<StopButton onPress={handleStopRecording} />
-							</View>
+						<View style={styles.middleRecorderWrapper}>
+							<StopButton onPress={handleStopRecording} />
 							<StyledTextLarge>Recording...</StyledTextLarge>
 						</View>
 					)}
-					<View style={styles.bottomWrapper}>
-						<SocialShareComponent />
-					</View>
+					<SocialShareComponent />
 				</>
 			) : (
 				<View>
@@ -87,30 +79,22 @@ export default function RecorderScreen() {
 
 const styles = StyleSheet.create({
 	wrapper: {
-		paddingTop: 50,
-		paddingBottom: 100,
 		backgroundColor: 'rgba(255,255,255,1)',
 		flex: 1,
-		alignItems: 'stretch',
-		justifyContent: 'flex-end',
-		width: '100%',
+		paddingTop: '5%',
+		paddingBottom: '5%',
 		paddingLeft: '10%',
 		paddingRight: '10%',
 	},
-	buttonWrapper: {
-		alignItems: 'center',
-		marginBottom: 30,
-	},
-	recorderWrapper: {
-		// For layout testing only:
-		// backgroundColor: '#eee',
+	middleRecorderWrapper: {
 		marginBottom: '10%',
+		flexShrink: 1,
+		flexBasis: 500,
+		justifyContent: 'center',
+		alignItems: 'center',
 	},
-	bottomWrapper: {
-		height: '40%',
+	submitWrapper: {
+		flexGrow: 1,
 		justifyContent: 'space-evenly',
-	},
-	topwrapper: {
-		marginBottom: 40,
 	},
 })

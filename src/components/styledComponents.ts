@@ -1,4 +1,3 @@
-// import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { KeyboardAvoidingView } from 'react-native'
 import PropTypes from 'prop-types'
@@ -55,6 +54,7 @@ export const StyledText = styled.Text`
 	font-size: 18px;
 	font-family: 'SFProDisplay-Regular';
 	letter-spacing: 0.36px;
+	line-height: 25px;
 `
 export const StyledTextBold = styled.Text`
 	text-align: center;
@@ -62,6 +62,7 @@ export const StyledTextBold = styled.Text`
 	font-size: 18px;
 	font-family: 'SFProDisplay-Bold';
 	letter-spacing: 0.36px;
+	line-height: 25px;
 `
 
 export const StyledTextLarge = styled.Text`
@@ -69,7 +70,7 @@ export const StyledTextLarge = styled.Text`
 	color: #777;
 	font-size: 30px;
 	font-family: 'SFProDisplay-Bold';
-	margin-bottom: 10px;
+	line-height: 35px;
 `
 
 export const StyledShareButton = styled.TouchableOpacity`
