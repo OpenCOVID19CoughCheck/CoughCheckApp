@@ -2,27 +2,27 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import { FontAwesome } from '@expo/vector-icons'
 
-export const ThirdPartyAuth = (props) => {
+export default function ThirdPartyAuth(props) {
 	return (
-		<View>
-			<View style={styles.spaceS}>
+		<View style={styles.thirdPartyAuthWrapper}>
+			<View style={styles.thirdPartyAuthButton}>
 				<FontAwesome.Button
 					name="facebook"
 					backgroundColor="#126FEE"
-					// onPress={this.loginWithFacebook}
+					// onPress={props.loginWithFacebook}
 					iconStyle={{ marginLeft: 6, marginRight: 18 }}
-					style={{ height: 50 }}
+					style={{ height: 40 }}
 				>
 					Login with Facebook
 				</FontAwesome.Button>
 			</View>
-			<View style={styles.spaceS}>
+			<View style={styles.thirdPartyAuthButton}>
 				<FontAwesome.Button
 					name="google"
 					backgroundColor="#126FEE"
 					iconStyle={{ marginLeft: 3, marginRight: 15 }}
-					style={{ height: 50 }}
-					// onPress={this.loginWithGoogle}
+					style={{ height: 40 }}
+					// onPress={props.loginWithGoogle}
 				>
 					Login with Google
 				</FontAwesome.Button>
@@ -32,13 +32,11 @@ export const ThirdPartyAuth = (props) => {
 }
 
 const styles = StyleSheet.create({
-	spaceS: {
+	thirdPartyAuthWrapper: {
+		flexGrow: 1,
+		justifyContent: 'flex-start',
+	},
+	thirdPartyAuthButton: {
 		marginBottom: 10,
-	},
-	spaceM: {
-		marginBottom: 20,
-	},
-	spaceL: {
-		marginBottom: 40,
 	},
 })

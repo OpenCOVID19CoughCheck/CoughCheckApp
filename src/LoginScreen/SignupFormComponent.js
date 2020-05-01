@@ -6,21 +6,21 @@ import {
 	Alert,
 	Text,
 	TextInput,
-	TouchableOpacity,
-	Button,
 	StyleSheet,
 	View,
 	KeyboardAvoidingView,
 } from 'react-native'
 import { CheckBox } from 'react-native-elements'
-import { useAuthContext } from '../../../../globalState/AuthContext'
+import { useAuthContext } from '../globalState/AuthContext'
+import ButtonCTALarge from 'src/components/ButtonCTALarge'
+import { StyledText } from 'src/components/styledComponents'
 
-export const SignupForm = (props) => {
+export default function SignupFormComponent(props) {
 	const passwordInput = React.useRef(null)
 	const { dispatch } = useAuthContext()
 
 	return (
-		<KeyboardAvoidingView behavior={'position'}>
+		<KeyboardAvoidingView behavior={'position'} style={styles.signupFormWrapper}>
 			<Formik
 				initialValues={{ email: '', password: '', check: false }}
 				validationSchema={Yup.object({
@@ -65,20 +65,17 @@ export const SignupForm = (props) => {
 						{props.touched.password && props.errors.password ? (
 							<Text style={styles.error}>{props.errors.password}</Text>
 						) : null}
-						<TouchableOpacity
-							// onPress={props.handleSubmit}           This is the syntax from Formik. Temporarily replaced with a function to Bypass Auth.
+						<ButtonCTALarge
+							text="Sign Up"
 							onPress={() => {
+								// Should we handle some kind of props.handleSubmit here when Auth is reactivated?
 								dispatch({
 									type: 'SIGN_IN',
 									token: 'TODO_SAVE_HERE_ANY_DATA_USEFUL_FOR_FUTURE_CALLS',
 								})
 							}}
 							accessibilityLabel="Submit button"
-						>
-							<View style={styles.signupButton}>
-								<Text style={styles.signupButtonText}>Sign Up</Text>
-							</View>
-						</TouchableOpacity>
+						/>
 
 						<CheckBox
 							containerStyle={styles.checkboxContainer}
@@ -94,11 +91,19 @@ export const SignupForm = (props) => {
 					</View>
 				)}
 			</Formik>
+			<View style={styles.textWrapper}>
+				<StyledText>Have an account? Sign In</StyledText>
+			</View>
 		</KeyboardAvoidingView>
 	)
 }
 
 const styles = StyleSheet.create({
+	signupFormWrapper: {
+		flexGrow: 1,
+		flexShrink: 1,
+		justifyContent: 'flex-start',
+	},
 	error: {
 		marginBottom: 13,
 		marginLeft: 8,
@@ -116,18 +121,6 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		marginBottom: 10,
 	},
-	signupButton: {
-		backgroundColor: '#126FEE',
-		alignItems: 'center',
-		justifyContent: 'center',
-		borderRadius: 5,
-		marginBottom: 10,
-	},
-	signupButtonText: {
-		color: 'white',
-		padding: 20,
-		fontSize: 20,
-	},
 	checkboxContainer: {
 		backgroundColor: 'white',
 		margin: 0,
@@ -135,6 +128,7 @@ const styles = StyleSheet.create({
 		paddingRight: 10,
 		marginLeft: 0,
 		marginRight: 0,
+		marginBottom: 10,
 	},
 	checkboxWrapper: {
 		margin: 0,

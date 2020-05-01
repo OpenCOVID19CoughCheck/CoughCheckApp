@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import { SignupForm } from './signupForm/SignupForm.js'
-import { ThirdPartyAuth } from './thirdPartyAuth/ThirdPartyAuth.js'
-import { Logo } from '../../../components/logo/Logo.js'
+import ThirdPartyAuth from './ThirdPartyAuthComponent.js'
+import { Logo } from '../components/logo/Logo.js'
 import { StyledText } from 'src/components/styledComponents'
+import SignupFormComponent from './SignupFormComponent.js'
 
 function LoginScreen(props) {
 	// const [email, setEmail] = React.useState('')
@@ -14,48 +14,31 @@ function LoginScreen(props) {
 	return (
 		<View style={styles.wrapper}>
 			<Logo />
-
-			{/* How can I pass CSS into one of these components? */}
-			<SignupForm style={styles.SignupForm} />
-
-			<View>
+			<SignupFormComponent />
+			<View style={styles.textWrapper}>
 				<StyledText>OR</StyledText>
 			</View>
-			<ThirdPartyAuth style={styles.ThirdPartyAuth} />
-
-			<View>
-				<StyledText>Have an account? Sign In</StyledText>
-			</View>
+			<ThirdPartyAuth />
 		</View>
 	)
 }
 
 const styles = StyleSheet.create({
 	wrapper: {
-		paddingTop: 100,
-		paddingBottom: 50,
 		backgroundColor: 'rgba(255,255,255,1)',
 		flex: 1,
-		alignItems: 'stretch',
-		justifyContent: 'space-around',
-		width: '100%',
+		justifyContent: 'center',
+		// alignItems: 'stretch',
+		// width: '100%',
+		paddingTop: '5%',
+		paddingBottom: '5%',
 		paddingLeft: '10%',
 		paddingRight: '10%',
 	},
-	SignupForm: {
-		flex: 10,
-	},
-	ThirdPartyAuth: {
-		flex: -1,
-	},
-	spaceS: {
+	textWrapper: {
+		marginTop: 10,
 		marginBottom: 10,
-	},
-	spaceM: {
-		marginBottom: 20,
-	},
-	spaceL: {
-		marginBottom: 40,
+		flexShrink: 1,
 	},
 })
 

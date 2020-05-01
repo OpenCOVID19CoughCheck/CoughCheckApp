@@ -1,12 +1,13 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import HomeScreen from 'src/home/HomeScreen'
 import QuestionnaireScreen from 'src/questionnaire/QuestionnaireScreen'
 import CoughRecorderScreen from 'src/cough-recorder/CoughRecorderScreen'
+import Recorder from 'src/cough-recorder/RecorderScreen'
+import HomeScreen from 'src/builderX/HomeScreen/src/screens/HomeScreen.js'
 import { useAuthContext } from 'src/globalState/AuthContext'
 import SplashScreen from 'src/components/SplashScreen'
-import LoginScreen from 'src/LoginScreen/src/screens/LoginScreen'
+import LoginScreen from 'src/LoginScreen/LoginScreen'
 import { AsyncStorage } from 'react-native'
 
 const Stack = createStackNavigator()
@@ -55,8 +56,8 @@ const AppNavigator = () => {
 				) : (
 					// User is signed in
 					<>
-						<Stack.Screen name="CoughRecorder" component={CoughRecorderScreen} />
-						<Stack.Screen name="Home" component={HomeScreen} />
+						{/* <Stack.Screen name="Home" component={HomeScreen} /> */}
+						<Stack.Screen name="Recorder" component={Recorder} />
 						<Stack.Screen name="Questionnaire" component={QuestionnaireScreen} />
 					</>
 				)}
